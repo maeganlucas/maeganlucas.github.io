@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Maegan Lucas Portfolio</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="base.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="bootstrap.js"></script>
+        <script src="modal.js"></script>
+    </head> 
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sage-sm bg-body-white">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img class="navbar-brand" src="pictures/MaeganLucasLogo.png" style="height: 50px; width: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-lab="toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent" style="width: 95%">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="btn dropdown-toggle black-text" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -13px;">
+                            Projects
+                        </a>
+                        <ol class="dropdown-menu bg-body-light-gray">
+                            <li><a class="dropdown-item" href="project-dashboard.html">Project Dashboard</a></li>
+                            <li><a class="dropdown-item" href="javascheduler.html">Java Scheduler</a></li>
+                            <li><a class="dropdown-item" href="roygbiv.html">Roy G. Biv</a></li>
+                            <li><a class="dropdown-item" href="booknook.html">Book Nook</a></li>
+                        </ol>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="internship.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse">
+                <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
+                <a href="https://github.com/maeganlucas?tab=repositories"><img class="github-logo" src="pictures/bootstrap-icons-1.10.5/github.svg"/></a>
+                <a href="https://www.linkedin.com/in/maegan-lucas/"><img class="linkedin-logo" src="pictures/bootstrap-icons-1.10.5/linkedin.svg"/></a>
+            </div>
+        </div>
+    </nav>
+    <body> 
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="emailModalLabel">My Email!</h5>
+                        <button type="button" class="rounded-close" data-dismiss="modal" aria-label="Close">
+                        <span class="sage-close" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead" style="display: inline-block">My email is </p>
+                        <p class="lead sage-text" style="display: inline-block"><strong>maeganalucas@gmail.com</strong></p>
+                        <p class="lead" style="display: inline-block; margin-left: -4px;">!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sage-bg" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 py-5 mb-0 mt-3 text-center bg-body-sage shadow">
+            <h1 class="display-5 fw-bold white-text text-shadow-gray">Welcome to my Portfolio!</h1>
+            <p class="lead white-text">Here you can see all of my projects, my internship experience, download my resume, and more!</p>
+        </div>
+        <div class="light-gray-divider"></div>
+        <div class="container col-xxl-8 px-4 py-5 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img class="shadow rounded-corners" src="pictures/booknook_demo.jpg" style="height: 250px"/>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Projects</h1>
+                    <p class="lead">To see all of my projects, click the button below to be taken to my project dashboard, or simply choose which project you would like to see from the Projects tab!</p>
+                    <a href="project-dashboard.html"><button type="button" class="btn btn-outline-sage btm-lg px-4 shadow-sm">See Projects</button></a>  
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider"></div>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Internship</h1>
+                    <p class="lead">To learn more about my internship, click the button below, or click the Internship tab!</p>
+                    <a href="internship.html"><button type="button" class="btn btn-outline-sage btm-lg px-4 shadow-sm">See Internship</button></a>  
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img class="shadow rounded-corners" src="pictures/internship_graphic.png" style="height: 300px"/>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider"></div>
+        <div class="px-4 py-5 mb-0 mt-3 text-center">
+            <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Resume</h1>
+            <p class="lead">To view and download my resume, click the button, or click the Resume tab!</p>
+            <a href="resume.html"><button type="button" class="btn btn-outline-sage btm-lg px-4 shadow-sm">See Resume</button></a>
+        </div>
+        <div class="light-gray-divider"></div>
+    </body>
+    <footer class="footer white-footer text-center align-content-center">
+        <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
+                <a href="https://github.com/maeganlucas?tab=repositories"><img class="github-logo" src="pictures/bootstrap-icons-1.10.5/github.svg"/></a>
+                <a href="https://www.linkedin.com/in/maegan-lucas/"><img class="linkedin-logo" src="pictures/bootstrap-icons-1.10.5/linkedin.svg"/></a>
+    </footer>
+</html>
