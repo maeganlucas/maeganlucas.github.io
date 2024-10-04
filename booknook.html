@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Book Nook</title> <!Sets title of page>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="base.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="bootstrap.js"></script>
+        <script src="modal.js"></script>
+    </head> 
+    
+    <body> 
+        <nav class="navbar navbar-expand-sm sticky-top shadow-sage-sm bg-body-white">
+            <div class="container-fluid">
+                <a href="home.html">
+                    <img class="navbar-brand" src="pictures/MaeganLucasLogo.png" style="height: 50px; width: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-lab="toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent" style="width: 95%">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="btn dropdown-toggle black-text" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -13px;">
+                                Projects
+                            </a>
+                            <ol class="dropdown-menu bg-body-light-gray">
+                                <li><a class="dropdown-item" href="project-dashboard.html">Project Dashboard</a></li>
+                                <li><a class="dropdown-item" href="javascheduler.html">Java Scheduler</a></li>
+                                <li><a class="dropdown-item" href="roygbiv.html">Roy G. Biv</a></li>
+                                <li><a class="dropdown-item" href="booknook.html">Book Nook</a></li>
+                            </ol>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link black-text" href="internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link black-text" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link black-text" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link black-text" href="aboutme.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link black-text" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
+                    <a href="https://github.com/maeganlucas?tab=repositories"><img class="github-logo" src="pictures/bootstrap-icons-1.10.5/github.svg"/></a>
+                    <a href="https://www.linkedin.com/in/maegan-lucas"><img class="linkedin-logo" src="pictures/bootstrap-icons-1.10.5/linkedin.svg"/></a>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="emailModalLabel">My Email!</h5>
+                        <button type="button" class="rounded-close" data-dismiss="modal" aria-label="Close">
+                        <span class="sage-close" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead" style="display: inline-block">My email is </p>
+                        <p class="lead sage-text" style="display: inline-block"><strong>maeganalucas@gmail.com</strong></p>
+                        <p class="lead" style="display: inline-block; margin-left: -4px;">!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sage-bg" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="px-4 pt-5 mb-2 mt-3 text-center">
+            <img src="pictures/BookNookLogo.png" class="book-nook-logo shadow" id="repo"/>
+        </div>
+        <div class="text-center mb-3">
+            <a href="https://github.com/maeganlucas/BookNook">
+                <button type="button" class="btn btn-outline-sage mt-2">
+                    <img src="pictures/github_logo_sage.png" class="github-logo" style="margin-right: 1;">See Github Repository
+                </button>
+            </a>
+        </div>
+        <div class="light-gray-divider" id="overview"></div>
+        <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+            <h1 class="display-5 fw-bold white-text text-shadow-gray">Project Overview</h1>
+            <p class="lead white-text">A book-review platflorm designed for readers and authors! Backed by a SQL database, information on multiple books, users, reviews, and more are stored. This application allows for books to be reviewed on its plot, characters, storyline, setting, and so much more!<br><br>This was an individual project for my Databases and Files class of Spring 2023. The goal of the project was to develop a SQL database capable of adding, editing, deleting, and querying data to further understand Entity/Relationship Models, normal forms, and developing in SQL language. From there, a Java application was developed that handled all user interaction once integrated with the database.<br><br>All documentation can be found in the GitHub repository.</p>
+        </div>
+        <div class="light-gray-divider"></div>
+        <div class="container col-xxl-8 px-4 py-5 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3 text-shadow-gray">The Program</h1>
+                    <p class="lead">A Java program was developed to handle all user interaction with the database. Authors and readers have their own profiles within the program. Depending on the role of the user, they are given different functionalities. Authors can add, delete, or edit books within the database as well as see reviews for the books they have entered. Readers can search for books, give them a reading status, and review the books to look back on later.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold mb-3 text-shadow-gray">The Database</h1>
+                    <p class="lead">A SQL database is the driving force behind Book Nook! It stores all of the information for the program. Information stored in the database can be recalled for searching, updating of all information, and seeing reviews. Through interaction with the Java program, users can also create new entries or delete entries within the database. All of the schemas within the database were analyzed to ensure that they meet 3rd Normal Form.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="skills"></div>
+        <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+            <div class="display-5 fw-bold white-text text-shadow-gray">Skills Learned</div>
+            <div class="lead white-text">Below are the skills I learned or developed upon during the course of this project.</div>
+        </div>
+        <div class="light-gray-divider"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">Programming Languages</h1>
+                <p class="lead display-7">Java, SQL</p>
+                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">IDE Software</h1>
+                <p class="lead display-7">IntelliJ, DBeaver</p>
+                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">Git Software</h1>
+                <p class="lead display-7">GitHub</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="generalfeatures"></div>
+        <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+            <div class="display-5 fw-bold white-text text-shadow-gray">General Features</div>
+            <div class="lead white-text">These are features shared by both authors and readers. </div>
+        </div>
+        <div class="light-gray-divider" id="newaccount"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                    <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Creating an Account</h1>
+                    <p class="lead">Upon opening Book Nook, all users will be taken to the login in page. From there, there are just six simple steps to create an account.</p>
+                    <ol>
+                        <li class="lead">Click the <i>Click here to create a new user</i> button.</li>
+                        <li class="lead">Enter your preferred name.</li>
+                        <li class="lead">Enter a username.</li>
+                        <li class="lead">Enter a password.</li>
+                        <li class="lead">Click the <i>Create User!</i> button.</li>
+                    </ol>
+                    <p class="lead">You will be taken back to the login screen and a pop-up will inform you that your account was successfully created and to log in. <br><br>
+                    If you enter a username that is already in use by someone of your selected role, you will recieve a pop-up informing you that the username is taken and to try a different one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="login"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Logging In</h1>
+                    <p class="lead">Once you have a Book Nook account, simply type in your username and password and click <i>Login</i>! You will be brought to your homepage.<br><br>If you enter incorrect information, whether it be username or password, you will recieve a pop-up informing you that something was incorrect and to try again.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="updateaccount"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Updating Account</h1>
+                    <p class="lead">If you want to update any of your account information, click the <i>Settings</i> tab on the menu bar at the top of the screen and press <i>Update Profile</i>. A popup will display with your current account information prefilled in the corresponding text fields, change any information you please and click <i>Update Profile</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="deleteaccount"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Deleting an Account</h1>
+                <p class="lead">If you want to delete your profile all together, click the <i>Settings</i> tab on the menu bar at the top of the screen and press <i>Delete Profile</i>. A popup will display to confirm that you want to delete your profile.</p>
+                <ul>
+                    <li class="lead">To return to your homescreen without deleting your profile, click <i>Keep Profile</i>.</li>
+                    <li class="lead">To delete your profile, click <i>Delete Profile</i>.</li>
+                </ul>
+                <p class="lead">For author users, when a profile is deleted, any books that they have entered into the database remain in the database. This is also stated in a special message on their confirmation popup.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="logout"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Logging Out</h1>
+                    <p class="lead">To log out of your account and return to the sign in screen, click the <i>Logout</i> tab on the menu bar on the top of the screen and press <i>Logout</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="authorfeatures"></div>
+        <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+            <div class="display-5 fw-bold white-text text-shadow-gray">Author Features</div>
+            <div class="lead white-text">These features are specific to author users.</div>
+        </div>
+        <div class="light-gray-divider" id="createbook"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Creating a Book</h1>
+                    <p class="lead">To create a book entry in the database, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Create Book</i>. Fill out the form with the appropriate information and select <i>Create Book</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="updatebook"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Updating a Book</h1>
+                    <p class="lead">To update a book entry within the database, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Update Book</i>. A popup will display asking for the ISBN of the book you would like to update. Enter the ISBN number and press <i>Update</i>.<br><br>A form will display with the book details prefilled in their respective fields. Update any information and press <i>Update Book</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="deletebook"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Deleting a Book</h1>
+                    <p class="lead">To update a book entry within the database, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Delete Book</i>. A popup will display asking for the ISBN of the book you would like to delete. Enter the ISBN number and press <i>Delete</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="authorreviews"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Seeing Book Reviews</h1>
+                    <p class="lead">To see reviews for a book, click the <i>Reviews</i> tab on the menu bar at the top of the screen and press <i>See Reviews</i>. Select the correct book from the dropdown menu and click <i>See Reviews</i>. Graphs of the different categories will appear.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="authorhome"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Returning to the Author Homescreen</h1>
+                    <p class="lead">To return to the author homescreen, click the <i>Logout</i> tab on the menu bar at the top of the screen and press <i>Back to Home</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="readerfeatures"></div>
+        <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+            <div class="display-5 fw-bold white-text text-shadow-gray">Reader Features</div>
+            <div class="lead white-text">These features are specific to reader users.</div>
+        </div>
+        <div class="light-gray-divider" id="search"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Searching Books</h1>
+                    <p class="lead">To search for aa particular book within the database, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Search Books</i>. In the search bar, type in keywords about the book's title, author, or series and press <i>Search</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="read"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Read Books</h1>
+                    <p class="lead">To see the books marked as <i>Read</i>, also the reader's homescreen, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Read Books</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="reading"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Currently Reading Books</h1>
+                    <p class="lead">To see the books marked as <i>Currently Reading</i>, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Currently Reading</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="tbr"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">TBR Books</h1>
+                    <p class="lead">To see the books marked as <i>To Be Read</i>, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>TBR</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="createreview"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Creating a Review</h1>
+                    <p class="lead">Once a book is marked as <i>Read</i> (see <i>Reading Statuses</i>), a new screen will appear allowing you to create a review. Fill in the fields with the appropriate information then click <i>Done!</i>.<br><br><i>Note:</i> Only numerical reviews will be taken into consideration for review breakdowns for both authors and readers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="updatereview"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Updating a Review</h1>
+                    <p class="lead">To update a review, click the <i>Reviews</i> tab on the menu bar at the top of the screen and press <i>Update Review</i>. A popup will display asking for the ISBN of the book review to update. Enter the ISBN number and then click <i>Update</i>. A form will display with the fields prefilled with the review's information stored in the database. Update any information necessary and click <i>Done!</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="deletereview"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Deleting a Review</h1>
+                    <p class="lead">To delete a review, click the <i>Reviews</i> tab on the menu bar at the top of the screen and press <i>Delete Review</i>. A popup will display asking for the ISBN of the book review to delete. Enter the ISBN number and then click <i>Delete</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="readerreviews"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Seeing Reviews</h1>
+                    <p class="lead">To see reviews for a certain time range, click the <i>Reviews</i> tab on the menu bar at the top of the screen and select <i>See Reviews</i>. Enter a beginning and ending date for the range and select <i>Get Review Breakdown</i>. Graphs of your reviews made between the given range will appear on the screen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="readingstatus"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Reading Statuses</h1>
+                    <p class="lead">To <strong>initially set</strong> a reading status for a book, first search for the book within the database (see <i>Searching Books</i>). Once you find the book you are looking for, click <i>Select Reading Status</i>. A popup will display asking for the book whose reading status you would like to set, which should prefill with the selected book's ISBN. A dropdown menu and three buttons will appear. Select the proper reading status from the dropdown menu and click <i>Set Reading Status</i>.<br><br>To <strong>edit</strong> a reading status for a book, first search for the book within the database (see <i>Searching Books</i>). Once you find the book you are looking for, click <i>Select Reading Status</i>. A popup will display asking for the book whose reading status you would like to set, which should prefill with the selected book's ISBN. A dropdown menu prefilled with the book's current reading status and three buttons will appear. Select the proper reading status from the dropdown menu and click <i>Edit Reading Status</i>.<br><br>To <strong>delete</strong> a reading status for a book, first search for the book within the database (see <i>Searching Books</i>). Once you find the book you are looking for, click <i>Select Reading Status</i>. A popup will display asking for the book whose reading status you would like to set, which should prefill with the selected book's ISBN. A dropdown menu prefilled with the book's current reading status and three buttons will appear. Select the proper reading status from the dropdown menu and click <i>Delete Status</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="light-gray-divider" id="readerhome"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+            <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Return to the Reader Homescreen</h1>
+                    <p class="lead">To return to the reader homescreen, click the <i>Books</i> tab on the menu bar at the top of the screen and press <i>Read Books</i>.</p>
+                </div>
+            </div>
+        </div>
+                    <div class="light-gray-divider"></div>
+    </body>
+    <footer class="footer white-footer text-center align-content-center">
+        <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
+                <a href="https://github.com/maeganlucas?tab=repositories"><img class="github-logo" src="pictures/bootstrap-icons-1.10.5/github.svg"/></a>
+                <a href="https://www.linkedin.com/in/maegan-lucas/"><img class="linkedin-logo" src="pictures/bootstrap-icons-1.10.5/linkedin.svg"/></a>
+    </footer>
+</html>
