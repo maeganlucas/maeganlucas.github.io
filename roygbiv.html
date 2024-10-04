@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Roy G. Biv</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="base.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="bootstrap.js"></script>
+        <script src="modal.js"></script>
+    </head> 
+    <nav class="navbar navbar-expand-sm sticky-top shadow-sage-sm bg-body-white">
+        <div class="container-fluid">
+            <a href="home.html">
+                <img class="navbar-brand" src="pictures/MaeganLucasLogo.png" style="height: 50px; width: 40px;">
+            </a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-lab="toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent" style="width: 95%">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="btn dropdown-toggle black-text" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -13px;">
+                            Projects
+                        </a>
+                        <ol class="dropdown-menu bg-body-light-gray">
+                            <li><a class="dropdown-item" href="project-dashboard.html">Project Dashboard</a></li>
+                            <li><a class="dropdown-item" href="javascheduler.html">Java Scheduler</a></li>
+                            <li><a class="dropdown-item" href="roygbiv.html">Roy G. Biv</a></li>
+                            <li><a class="dropdown-item" href="booknook.html">Book Nook</a></li>
+                        </ol>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="internship.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link black-text" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse">
+                <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
+                <a href="https://github.com/maeganlucas?tab=repositories"><img class="github-logo" src="pictures/bootstrap-icons-1.10.5/github.svg"/></a>
+                <a href="https://www.linkedin.com/in/maegan-lucas"><img class="linkedin-logo" src="pictures/bootstrap-icons-1.10.5/linkedin.svg"/></a>
+            </div>
+        </div>
+    </nav>
+    <body> 
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="emailModalLabel">My Email!</h5>
+                        <button type="button" class="rounded-close" data-dismiss="modal" aria-label="Close">
+                        <span class="sage-close" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead" style="display: inline-block">My email is </p>
+                        <p class="lead sage-text" style="display: inline-block"><strong>maeganalucas@gmail.com</strong></p>
+                        <p class="lead" style="display: inline-block; margin-left: -4px;">!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sage-bg" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                     <div class="px-4 pt-5 mb-2 mt-3 text-center">
+                        <h1 class="fw-bold black-text gray-shadow">Roy G. Biv</h1>
+                    </div>
+                    <div class="text-center mb-3">
+                        <a href="https://github.com/maeganlucas/RoyGBiv">
+                            <button type="button" class="btn btn-outline-sage mt-2">
+                                <img src="pictures/github_logo_sage.png" class="github-logo" style="margin-right: 1;">See Github Repository
+                            </button>
+                        </a>
+                    </div>
+                    <div class="light-gray-divider" id="overview"></div>
+                    <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+                        <h1 class="display-5 fw-bold white-text text-shadow-gray">Project Overview</h1>
+                        <p class="lead white-text">A desktop application created for users with color-blindness of any form. The program allows users to customize filters, filter their entire screen, filter a range of their screen, filter an image, or detect the color(s) of a range of the screen.<br><br>This was four-person group project, of which I was Scrum Master for my team, during the Fall 2022 semester for my Software Engineering Practices class. I was responsible for the <i>color detecting feature</i>, was in charge of leading the stand-up meetings, and much more which is described below.<br><br>All documentation can be found in the GitHub repository.</p>
+                    </div>
+                    <div class="light-gray-divider" id="skills"></div>
+                    <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+                        <div class="display-5 fw-bold white-text text-shadow-gray">Skills Learned</div>
+                        <div class="lead white-text">Below are the skills I learned or developed upon during the course of this project.</div>
+                    </div>
+                    <div class="light-gray-divider"></div>
+                    <div class="container col-xxl-10 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                            <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">Programming Languages</h1>
+                                <p class="lead display-7">Python</p>
+                                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">IDE Software</h1>
+                                <p class="lead display-7">PyCharm</p>
+                                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">Git Software</h1>
+                                <p class="lead display-7">GitHub</p>
+                                <h1 class="display-7 fw-bold mb-3 text-shadow-gray">Tools</h1>
+                                <p class="lead display-7">Scrumwise</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-gray-divider" id="scrum"></div>
+                    <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+                        <div class="display-5 fw-bold white-text text-shadow-gray">Scrum Master</div>
+                        <div class="lead white-text">This section describes in detail my reponsibilities as my team's Scrum Master.</div>
+                    </div>
+                    <div class="light-gray-divider"></div>
+                    <div class="container col-xxl-10 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                            <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Scrum Management</h1>
+                                <p class="lead">Led our stand-up meetings and making sure our backlog was updated in Scrumwise on a regular basis.</p>
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Teamwork and Communication</h1>
+                                <p class="lead">Made sure team members had everything they needed to complete their respective parts of the program. Contacted team members to stay updated on their progress and any blockers that may have arose. Helped team members when asked or pointed them to who would know more about the subject.</p>
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Diagrams</h1>
+                                <p class="lead">Helped team develop Context, Conceptual, and Use-Case Diagrams for our program.</p>
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Presentations</h1>
+                                <p class="lead">Helped create presentations to be presented to the class. Also presented my sections of the presentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-gray-divider" id="features"></div>
+                    <div class="px-4 py-5 mb-0 mt-0 text-start bg-body-sage shadow">
+                        <div class="display-5 fw-bold white-text text-shadow-gray">Features</div>
+                        <div class="lead white-text">This section describes the features of Roy G. Biv.</div>
+                    </div>
+                    <div class="light-gray-divider" id=customfilter></div>
+                    <div class="container col-xxl-10 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                            <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Customizable Filters</h1>
+                                <p class="lead">Filter values are preloaded with values for tritanopia, deuteranopia, and protanopia. These can be used on their own or customized and combined to create a filter that works best for you. After selecting your filter values using the sliders click <i>Confirm</i>. You can test your filter values by selecting the <i>Test Filter</i> button in the menu on the right. You can choose <i>Reset Sliders</i> to clear the filter values and start from scratch. Once you have the filter how you want it, you can save the filter by clicking <i>Save Filter</i>.<br><br>Once you have a saved filter you can recall it from the dropdown menu in the filter selection area and click <i>Confirm</i> to use it any time you use Roy G. Biv!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-gray-divider" id="screen"></div>
+                    <div class="container col-xxl-10 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                            <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Screen Filtering</h1>
+                                <p class="lead">Once you have selected and confirmed your filter, you can choose to filter your screen by clicking the <i>Filter Your Screen</i> button from the menu on the right. From here you can choose whether to filter your whole screen or a specific range of your screen.<br><br>For a full screen filter, simply click the <i>Full screen Filter</i> checkbox and a picture will be generated of your whole screen with the selected filter applied and displayed on the screen.<br><br>For a range filter, click the <i>Range Selection Filter</i> checkbox and a semi-transparent range selection box will appear on the screen. Manipulate the size and position of the range selection box to your desired range and click the <i>Select Range</i> button at the top of the range selection box. An image of the selected range with the selected filter applied will be generated and displayed on the screen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-gray-divider" id="image"></div>
+                    <div class="container col-xxl-10 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                            <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Image Filtering</h1>
+                                <p class="lead">To filter an image, click <i>Filter a Photo</i> from the menu on the right. A screen will appear to browse files. Click <i>Browse Files</i> and select the image you would like to filter. The image will appear on the screen, along with its file name at the bottom. Your selected filter values will be shown at the bottom of the screen as well. Click the <i>Apply Filter</i> button and a new image will be generated with the desired filter applied to the selected photo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-gray-divider" id="colordetect"></div>
+                    <div class="container col-xxl-10 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center align-self-center text-center g-5 py-5">
+                            <div class="col-lg-6" style="width: 100%; padding-left: 10px;">
+                                <h1 class="display-5 fw-bold mb-3 text-shadow-gray">Color Detection</h1>
+                                <p class="lead">To detect the color(s) of a range of the screen, select the <i>Detect Color</i> button from the menu on the right. A color detection screen will appear with instructions, the current status of color detection, and an area to see the color breakdown on the right. Click <i>Breakdown</i> and select a range by manipulating the size and position of the range selection box and click <i>Select Range</i> when finished. Roy G. Biv will then begin detecting the color(s) of the selected area.<br><br><strong><i>WARNING: Do not interact with any Roy G. Biv windows while the color is being detected (or has a status of Running)</i></strong><br><br>Once the program is done detecting the color(s) of the range you will be able to see the breakdown printed on the right. It will show the count colors based on pixel and the percentage of each color within the range.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-gray-divider"></div>
+    </body>
+    <footer class="footer white-footer text-center align-content-center">
+        <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
+                <a href="https://github.com/maeganlucas?tab=repositories"><img class="github-logo" src="pictures/bootstrap-icons-1.10.5/github.svg"/></a>
+                <a href="https://www.linkedin.com/in/maegan-lucas/"><img class="linkedin-logo" src="pictures/bootstrap-icons-1.10.5/linkedin.svg"/></a>
+    </footer>
+</html>
