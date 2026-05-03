@@ -87,6 +87,13 @@
                 </div>
             </div>
         </div>
+        <div id="bolo-popup" class="popup-wrapper">
+            <div class="popup-content">
+                <span class="close-btn" id="close-popup">&times;</span>
+                <h2 class="display-5 fw-bold mb-3 text-shadow-gray">Be On The Lookout!</h2>
+                <p class="lead">A new and improved portfolio is being developed! Keep an eye out for an all new user experience coming your way!</p>
+            </div>
+        </div>
         <div class="px-4 py-5 mb-0 mt-3 text-center bg-body-sage shadow">
             <h1 class="display-5 fw-bold white-text text-shadow-gray">Welcome to my Portfolio!</h1>
             <p class="lead white-text">Here you can see my work experience, all of my projects, my internship experience, download my resume, and more!</p>
@@ -137,6 +144,24 @@
             <a href="resume.html"><button type="button" class="btn btn-outline-sage btm-lg px-4 shadow-sm">See Resume</button></a>
         </div>
         <div class="light-gray-divider"></div>
+        <script>
+            window.addEventListener("load", function() {
+                setTimeout(function() {
+                    document.getElementById("bolo-popup").style.display = "block";
+                }, 1000);
+            })
+
+            document.getElementById("close-popup").addEventListener("click", function() {
+                document.getElementById("bolo-popup").style.display = "none";
+            })
+
+            window.addEventListener("click", function(event) {
+                let modal = document.getElementById("bolo-popup");
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            })
+        </script>
     </body>
     <footer class="footer white-footer text-center align-content-center">
         <button type="button" class="btn btn-transparent" data-toggle="modal" data-target="#emailModal"><img class="email-graphic" src="pictures/bootstrap-icons-1.10.5/envelope-fill.svg"/></button>
