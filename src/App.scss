@@ -35,6 +35,20 @@
     box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
 }
 
+.location-icon {
+    @extend .non-hoverable-icon;
+    margin-top: 4.5px;
+    margin-right: 0.5rem;
+    height: 1.2rem;
+}
+
+.calendar-icon {
+    @extend .non-hoverable-icon;
+    margin-top: 6.5px;
+    margin-right: 0.5rem;
+    height: 1rem;
+}
+
 /* Star Icon Styling */
 .cream-star-icon {
     fill: var(--cream);

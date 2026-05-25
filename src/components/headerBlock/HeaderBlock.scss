@@ -1,0 +1,33 @@
+.header-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header-block h1 {
+    margin: 0 1rem;
+}
+
+.header-block hr {
+    border-top: var(--light-charcoal) dotted 2.5px;
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-top: var(--bs-gutter-y);
+}
+
+.header-star-icons {
+    width: 4.5rem;
+    padding-right: 0.5rem;
+}
+
+.header-row {
+    flex-direction: row;
+}
+
+.more-details-text {
+    margin-bottom: 2rem;
+    margin-left: 0.4rem;
+    max-width: 860px;
+}
+

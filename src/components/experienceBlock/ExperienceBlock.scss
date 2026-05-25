@@ -1,0 +1,50 @@
+.subheader-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.job-desc-grid {
+    display: grid;
+    grid-template-columns: 1rem 2fr;
+    gap: 1rem;
+}
+
+.experience-block {
+  text-align: start;
+  margin-left: 6.3rem;
+}
+
+.experience-break {
+    height: 3rem;
+}
+
+.left-border {
+  border-left: 1px solid var(--medium-charcoal);
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.small-p {
+    font-size: 1.05rem;
+}
+
+.icon-spacer {
+    width: 2rem;
+}
+
+.job-desc-bullets {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 700px;
+}
+
+.ip-text {
+    @extend .subheader-row;
+    margin-left: 3px;
+}
+
+.desc-bullet-column {
+    @extend .job-desc-bullets;
+}
