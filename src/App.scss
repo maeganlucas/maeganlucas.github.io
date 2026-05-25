@@ -82,6 +82,10 @@
     fill: var(--cream);
 }
 
+.wisteria-star-icon {
+    fill: var(--wisteria);
+}
+
 .bullet-star-icon {
     @extend .cream-star-icon;
     height: 2rem;
