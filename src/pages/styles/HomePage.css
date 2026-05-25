@@ -1,0 +1,81 @@
+.home-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1cqi;
+  text-align: center;
+}
+
+.home-page-content {
+  font-family: "SF Pro";
+  position: relative;
+  transition: top 0.20s ease-in-out;
+}
+
+#hero {
+  position: relative;
+}
+
+#experience, #projects {
+  scroll-margin-top: 4.5rem;
+}
+
+.hero-break {
+  height: 3rem;
+}
+
+.hero-row {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+}
+
+.hero-stars {
+  height: 2rem;
+}
+
+.hero-navbar-closed {
+  top: 22vh;
+}
+
+.hero-navbar-open {
+  top: 15vh;
+}
+
+.pfp {
+  height: 22rem;
+  border-radius: 22px;
+  box-shadow: #c8a3dc40 10px 15px 23px -5px;
+}
+
+@media (max-width: 768px) {
+  .home-page-content {
+    padding: 2rem;
+  }
+
+  .hero-row {
+    flex-direction: column;
+  }
+
+  .hero-navbar-closed {
+    top: 10vh;
+  }
+
+  .pfp {
+    height: 17rem;
+  }
+
+  .hero-break {
+    height: 1rem;
+  }
+}
+
+
+@media (max-height: 800px) {
+  .hero-navbar-closed {
+    top: 8vh;
+  }
+
+  
+}

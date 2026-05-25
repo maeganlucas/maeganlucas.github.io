@@ -1,0 +1,37 @@
+.navbar {
+    background-color: var(--charcoal);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+.brand:hover {
+    cursor: pointer;
+}
+
+.maegan-lucas-logo {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.navbar-toggle {
+    border-width: 0;
+}
+
+/* Navbar Links */
+.navbar-link {
+    text-decoration: none;
+    margin-right: 0.75rem;
+    transition: color 0.25s ease-in-out;
+    font-weight: bold;
+    font-family: SF Pro, sans-serif;
+    margin-bottom: 0.15rem;
+    color: var(--cream);
+}
+
+.navbar-link:hover {
+    color: var(--wisteria);
+    cursor: pointer;
+}
