@@ -1,3 +1,31 @@
+/* Card Styling */
+.card {
+    background: var(--charcoal) !important;
+    border-color: rgba(64, 64, 64, 0.4) !important;
+    border-width: 1.5px !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+    transition: transform 200ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--wisteria) !important;
+    font-family: SF Pro, sans-serif !important;
+    font-weight: bold !important;
+}
+
+.card-text {
+    color: var(--cream) !important;
+    font-size: 1.05rem !important;
+    font-family: SF Pro, sans-serif !important;
+    height: 180px !important;
+}
+
 /* Icon Styles */
 .icon {
     margin-right: 1rem;

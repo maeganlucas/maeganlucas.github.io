@@ -1,0 +1,40 @@
+.projects-block {
+  text-align: start;
+  margin-left: 6.3rem;
+}
+
+.project-grid {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  row-gap: 2rem;
+  justify-content: space-between;
+}
+
+.title-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project-type {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+}
+
+.link-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.skill-text {
+  margin-top: 15px;
+}

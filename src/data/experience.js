@@ -47,7 +47,7 @@ export const careerFeatures = [
 export const internFeatures = [
     {
         id: 0,
-        description: "Responsible for creating UI mockups for each feature I led and thinking about the UI experience as a whole. Held UI/UX discussions with team members, management and customers."
+        description: "Responsible for creating UI mockups for the feature I led and thinking about the UI experience as a whole. Held UI/UX discussions with team members."
     },
     {
         id: 1,
