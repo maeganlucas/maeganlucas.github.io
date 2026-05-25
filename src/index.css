@@ -5,7 +5,7 @@
   --wisteria: #C8A3DC;
   --cream: #F8F5E7;
   --light-charcoal: #404040;
-  --charcoal: #252525;
+  --charcoal: #171718;
 }
 
 [data-bs-theme-light]
@@ -14,7 +14,7 @@
   --wisteria: #C8A3DC;
   --cream: #F8F5E7;
   --light-charcoal: #404040;
-  --charcoal: #252525;
+  --charcoal: #171718;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--charcoal);
 }
 
 code {

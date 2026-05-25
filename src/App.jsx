@@ -25,7 +25,7 @@ function App() {
     <Router>
       <div className="App">
         <NavBar onNavBarToggled={NavBarToggled}></NavBar>
-        <main className="App-main">
+        <main className="App-main texture">
           <Routes>
             <Route path="/" element={<HomePage statusOfNavBar={isNavBarToggled}/>} />
             <Route path="*" element={<Navigate to="/" replace />} />
