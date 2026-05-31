@@ -101,7 +101,7 @@ export const skillIcons = {
     "Confluence": {
         src: require("../assets/images/skills/confluence.svg").default
     },
-    "CSharp": {
+    "C#": {
         src: require("../assets/images/skills/csharp.png")
     },
     "CSS": {

@@ -19,7 +19,7 @@ export const projects = {
         desc: "An inherited 5-person project that utilized a Flask-based website, multiple APIs, and a NVIDIA NeMo Automatic Speech Recongition (ASR) model to transcribe Air Traffic Communication (ATC) audio. Designed to be a tool to help student pilots learn aviation phraseology.",
         type: ProjectType.TEAM,
         githubLink: "",
-        skills: ["HTML", "CSS", "Javascript", "Flask", "GitHub", "GitHub Desktop"]
+        skills: ["HTML", "CSS", "JavaScript", "Flask", "GitHub", "GitHub Desktop"]
     },
     "Book Nook": {
         id: 2,

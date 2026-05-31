@@ -42,7 +42,7 @@ function ProjectsBlock () {
                     <div className='skills'>
                         <SkillTag name={"HTML"} />
                         <SkillTag name={"CSS"} />
-                        <SkillTag name={"Javascript"} />
+                        <SkillTag name={"JavaScript"} />
                         <SkillTag name={"React.js"} />
                         <SkillTag name={"Figma"} />
                         <SkillTag name={"GitHub"} />
@@ -54,7 +54,7 @@ function ProjectsBlock () {
                     <div className='skills'>
                         <SkillTag name={"HTML"} />
                         <SkillTag name={"CSS"} />
-                        <SkillTag name={"Javascript"} />
+                        <SkillTag name={"JavaScript"} />
                         <SkillTag name={"Flask"} />
                         <SkillTag name={"GitHub"} />
                         <SkillTag name={"GitHub Desktop"} />
