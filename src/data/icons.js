@@ -75,3 +75,114 @@ export const experienceIcons = [
         d: "M16 5h-6a1 1 0 0 0 0 2h6v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-4h6a1 1 0 0 0 0-2H0V3h16zm-2-5a2 2 0 0 1 2 2H0a2 2 0 0 1 2-2z"
     }
 ]
+
+export const skillIcons = {
+    "Adobe Photoshop": {
+        src: require("../assets/images/skills/adobePhotoshop.png")
+    },
+    "Android": {
+        src: require("../assets/images/skills/android.png")
+    },
+    "Artifactory": {
+        src: require("../assets/images/skills/artifactory.png")
+    },
+    "Bitbucket": {
+        src: require("../assets/images/skills/bitbucket.png")
+    },
+    "Bootstrap": {
+        src: require("../assets/images/skills/bootstrap.png")
+    },
+    "Butter": {
+        src: require("../assets/images/skills/butter.png")
+    },
+    "Canva": {
+        src: require("../assets/images/skills/canva.png")
+    },
+    "Confluence": {
+        src: require("../assets/images/skills/confluence.svg").default
+    },
+    "CSharp": {
+        src: require("../assets/images/skills/csharp.png")
+    },
+    "CSS": {
+        src: require("../assets/images/skills/css.svg").default
+    },
+    "DBeaver": {
+        src: require("../assets/images/skills/dbeaver.png")
+    },
+    "Figma": {
+        src: require("../assets/images/skills/figma.png")
+    },
+    "Flask": {
+        src: require("../assets/images/skills/flask.png")
+    },
+    "GitHub": {
+        src: require("../assets/images/skills/github.png")
+    },
+    "GitHub Desktop": {
+        src: require("../assets/images/skills/githubDesktop.png")
+    },
+    "HTML": {
+        src: require("../assets/images/skills/html.png")
+    },
+    "IntelliJ": {
+        src: require("../assets/images/skills/intelliJ.png")
+    },
+    "iOS": {
+        src: require("../assets/images/skills/ios.png")
+    },
+    "Java": {
+        src: require("../assets/images/skills/java.png")
+    },
+    "JavaScript": {
+        src: require("../assets/images/skills/JavaScript.png")
+    },
+    "Jenkins": {
+        src: require("../assets/images/skills/jenkins.png")
+    },
+    "Jira": {
+        src: require("../assets/images/skills/jira.png")
+    },
+    ".NET MAUI": {
+        src: require("../assets/images/skills/netmaui.png")
+    },
+    "PyCharm": {
+        src: require("../assets/images/skills/pycharm.png")
+    },
+    "Python": {
+        src: require("../assets/images/skills/python.png")
+    },
+    "React.js": {
+        src: require("../assets/images/skills/react.png")
+    },
+    "Sass": {
+        src: require("../assets/images/skills/sass.png")
+    },
+    "Scrumwise": {
+        src: require("../assets/images/skills/scrumwise.png")
+    },
+    "Sourcetree": {
+        src: require("../assets/images/skills/sourcetree.png")
+    },
+    "SQL": {
+        src: require("../assets/images/skills/sql.png")
+    },
+    "Swift": {
+        src: require("../assets/images/skills/swift.png")
+    },
+    "Visual Studio": {
+        src: require("../assets/images/skills/visualStudio.png")
+    },
+    "VS Code": {
+        src: require("../assets/images/skills/vsCode.png")
+    },
+    "XAML": {
+        src: require("../assets/images/skills/xaml.png")
+    },
+    "Xcode": {
+        src: require("../assets/images/skills/xcode.png")
+    },
+    "XML": {
+        src: require("../assets/images/skills/xml.png")
+    }
+}

@@ -9,6 +9,12 @@
     transition: transform 200ms ease-in-out;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -23,7 +29,7 @@
     color: var(--cream) !important;
     font-size: 1.05rem !important;
     font-family: SF Pro, sans-serif !important;
-    height: 180px !important;
+    margin-bottom: 1rem;
 }
 
 /* Icon Styles */

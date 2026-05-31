@@ -1,6 +1,8 @@
 import { Card, Button } from 'react-bootstrap';
 import './ProjectsBlock.scss';
 
+import { default as SkillTag } from '../skillTag/SkillTag';
+
 import { projects, ProjectType } from '../../data/projects';
 import { linkIcons } from '../../data/icons';
 import nemo_asr from '../../assets/images/projects/nemo_asr.png';
@@ -32,24 +34,91 @@ function ProjectsBlock () {
         }
     }
 
+    const getSkills = (project) => {
+        var name = String(project);
+        switch (name) {
+            case "Personal Portfolio":
+                return (
+                    <div className='skills'>
+                        <SkillTag name={"HTML"} />
+                        <SkillTag name={"CSS"} />
+                        <SkillTag name={"Javascript"} />
+                        <SkillTag name={"React.js"} />
+                        <SkillTag name={"Figma"} />
+                        <SkillTag name={"GitHub"} />
+                        <SkillTag name={"GitHub Desktop"} />
+                    </div>
+                );
+            case "NeMo ASR Website":
+                return (
+                    <div className='skills'>
+                        <SkillTag name={"HTML"} />
+                        <SkillTag name={"CSS"} />
+                        <SkillTag name={"Javascript"} />
+                        <SkillTag name={"Flask"} />
+                        <SkillTag name={"GitHub"} />
+                        <SkillTag name={"GitHub Desktop"} />
+                    </div>
+                );
+            case "Book Nook":
+                return (
+                    <div className='skills'>
+                        <SkillTag name={"Java"} />
+                        <SkillTag name={"SQL"} />
+                        <SkillTag name={"DBeaver"} />
+                        <SkillTag name={"GitHub"} />
+                    </div>
+                );
+            case "Roy G. Biv":
+                return (
+                    <div className='skills'>
+                        <SkillTag name={"Python"} />
+                        <SkillTag name={"GitHub"} />
+                        <SkillTag name={"Scrumwise"} />
+                    </div>
+                );
+        }
+    }
+
+    var elements = [];
+    
+    const addElements = (name) => {
+        for (let i = 0; i < projects[String(name)]["skills"].length; i++)
+        {
+            var skillName = projects[String(name)]["skills"][i];
+            var key = String(name) + " " + String(i);
+            elements.push(
+                <SkillTag key={key} name={String(skillName)} />
+            );
+        }
+    }
+
+    const clearElements = () => {
+        elements = [];
+    }
+
     return (
         <div className='projects-block'>
             <div className='project-grid'>
-                {projects.map(({ id, name, desc, type, githubLink, skills}) => (
+                {Object.keys(projects).map((key, id) => (
                     <Card key={id} style={{ width: '18rem' }}>
                         <Card.Body>
-                            <Card.Img src={getImageSource(id)} variant='top' />
+                            <Card.Img src={getImageSource(projects[key]["id"])} variant='top' />
                             <Card.Title>
                                 <div className='title-row'>
-                                    {name}
-                                    <p className='project-type'>({projectType(type)})</p>
+                                    {projects[key]["name"]}
+                                    <p className='project-type'>({projectType(projects[key]["type"])})</p>
                                 </div>
                             </Card.Title>
-                            <div className='card-text'>{desc}</div>
-                            <p className='skill-text small-p'>{skills.join(", ")}</p>
-                            <p className='small-p wisteria-text' hidden={githubLink !== ""}>As this project is still being worked on, there is no public GitHub repository.</p>
+                            <div className='card-text'>{projects[key]["desc"]}</div>
+                            <div className='skills'>
+                                {addElements(projects[key]["name"])}
+                                {elements}
+                                {clearElements()}
+                            </div>
+                            <p className='small-p wisteria-text' hidden={projects[key]["githubLink"] !== ""}>As this project is still being worked on, there is no public GitHub repository.</p>
                             <div className='link-row'>
-                                <a href={githubLink} hidden={githubLink === ""}>
+                                <a href={projects[key]["githubLink"]} hidden={projects[key]["githubLink"] === ""}>
                                     <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
                                         <path d={linkIcons[2].d} />
                                     </svg>

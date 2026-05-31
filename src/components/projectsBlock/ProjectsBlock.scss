@@ -32,9 +32,33 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
 }
 
-.skill-text {
-  margin-top: 15px;
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  row-gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.skills div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+  border: 1.5px solid var(--medium-charcoal-half) !important;
+  padding: 2px 5px;
+  border-radius: 7px;
+  background-color: #40404040;
+}
+
+.skills p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.skills img {
+  height: 1rem;
 }

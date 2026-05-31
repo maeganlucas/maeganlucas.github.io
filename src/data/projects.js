@@ -4,8 +4,8 @@ export const ProjectType = Object.freeze({
     TEAM: 3
 });
 
-export const projects = [
-    {
+export const projects = {
+    "Personal Portfolio": {
         id: 0,
         name: "Personal Portfolio",
         desc: "desc",
@@ -13,7 +13,7 @@ export const projects = [
         githubLink: "1",
         skills: ["HTML","CSS", "React.js", "Figma", "GitHub", "GitHub Desktop"]
     },
-    {
+    "NeMo ASR Website": {
         id: 1,
         name: "NeMo ASR Website",
         desc: "An inherited 5-person project that utilized a Flask-based website, multiple APIs, and a NVIDIA NeMo Automatic Speech Recongition (ASR) model to transcribe Air Traffic Communication (ATC) audio. Designed to be a tool to help student pilots learn aviation phraseology.",
@@ -21,7 +21,7 @@ export const projects = [
         githubLink: "",
         skills: ["HTML", "CSS", "Javascript", "Flask", "GitHub", "GitHub Desktop"]
     },
-    {
+    "Book Nook": {
         id: 2,
         name: "Book Nook",
         desc: "An individual project utilizing Java and a SQL database. The goal of the project was to design a database for readers and authors that allows them to store information about books and reviews in personalized profiles. The database was then integrated with a user-interface platform.",
@@ -29,7 +29,7 @@ export const projects = [
         githubLink: "https://github.com/maeganlucas/BookNook",
         skills: ["Java", "SQL", "DBeaver", "GitHub"]
     },
-    {
+    "Roy G. Biv": {
         id: 3,
         name: "Roy G. Biv",
         desc: "A 4-person team project, in which I acted as Scrum Master and Developer. The goal of the project was to aid those with color blindness. Using Python, a desktop software was developed that allowed users to fiter their screen based off preference to help differentiate colors. I was responsible for the Color Detection feature!",
@@ -37,4 +37,4 @@ export const projects = [
         githubLink: "https://github.com/maeganlucas/RoyGBiv",
         skills: ["Python", "GitHub", "Scrumwise"]
     }
-]
+}
