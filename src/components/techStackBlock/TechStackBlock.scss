@@ -1,0 +1,12 @@
+.tech-stack-block {
+  text-align: start;
+  margin-left: 6.3rem;
+}
+
+.tech-stack-grid {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  row-gap: 2rem;
+  justify-content: space-between;
+}

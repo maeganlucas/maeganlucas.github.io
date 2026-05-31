@@ -12,6 +12,9 @@
 .card-body {
     display: flex;
     flex-direction: column;
+}
+
+.card-body-justify {
     justify-content: space-between;
 }
 
@@ -30,6 +33,41 @@
     font-size: 1.05rem !important;
     font-family: SF Pro, sans-serif !important;
     margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  row-gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.tech-stack-skills {
+    @extend .skills;
+    margin-top: 1rem;
+}
+
+
+.skills div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+  border: 1.5px solid var(--medium-charcoal-half) !important;
+  padding: 2px 5px;
+  border-radius: 7px;
+  background-color: #40404040;
+}
+
+.skills p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.skills img {
+  height: 1rem;
 }
 
 /* Icon Styles */

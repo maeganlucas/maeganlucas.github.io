@@ -5,6 +5,7 @@ import './styles/HomePage.css';
 import HeaderBlock from '../components/headerBlock/HeaderBlock';
 import ExperienceBlock from '../components/experienceBlock/ExperienceBlock';
 import ProjectsBlock from '../components/projectsBlock/ProjectsBlock';
+import TechStackBlock from '../components/techStackBlock/TechStackBlock';
 
 /* Import images and icons */
 import pfp from '../assets/images/MaeganLucasPic.jpg';
@@ -56,6 +57,11 @@ function HomePage({statusOfNavBar}) {
         <section id='projects'>
           <HeaderBlock headerName={"Projects"} moreInfo={true}/>
           <ProjectsBlock />
+        </section>
+        <section id='spacer' />
+        <section id='tech-stack'>
+          <HeaderBlock headerName={"Tech Stack"} moreInfo={false} />
+          <TechStackBlock />
         </section>
         <section id='spacer' />
         <section id='spacer' />

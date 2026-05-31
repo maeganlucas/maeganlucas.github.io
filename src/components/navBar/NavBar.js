@@ -85,6 +85,7 @@ function NavBar({ onNavBarToggled }) {
                 <Nav>
                     <HashLink to="#experience" className="navbar-link" onClick={linkClicked}>Experience</HashLink>
                     <HashLink to="#projects" className='navbar-link' onClick={linkClicked}>Projects</HashLink>
+                    <HashLink to="#tech-stack" className='navbar-link' onClick={linkClicked}>Tech Stack</HashLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

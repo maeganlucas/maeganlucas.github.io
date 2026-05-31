@@ -102,7 +102,7 @@ function ProjectsBlock () {
             <div className='project-grid'>
                 {Object.keys(projects).map((key, id) => (
                     <Card key={id} style={{ width: '18rem' }}>
-                        <Card.Body>
+                        <Card.Body className='card-body-justify'>
                             <Card.Img src={getImageSource(projects[key]["id"])} variant='top' />
                             <Card.Title>
                                 <div className='title-row'>
