@@ -114,10 +114,13 @@ p {
   margin: 0;
 }
 
-#spacer {
+#hero-spacer {
   height: 30rem;
 }
 
+#spacer {
+  height: 10rem;
+}
 
 /* Fonts */
 @font-face {

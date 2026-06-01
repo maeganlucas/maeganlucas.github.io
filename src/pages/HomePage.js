@@ -48,7 +48,7 @@ function HomePage({statusOfNavBar}) {
             <img src={pfp} alt="Picture of me!" className='pfp'/>
           </div>
         </section>
-        <section id='spacer' />
+        <section id='hero-spacer' />
         <section id='experience'>
           <HeaderBlock headerName={"Experience"} moreInfo={true} />
           <ExperienceBlock />
