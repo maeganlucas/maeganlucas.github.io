@@ -8,6 +8,10 @@
     box-shadow: 0.5px 1.1px 1px var(--medium-charcoal-half) !important;
 }
 
+.navbar-nav {
+    gap: 0.75rem;
+}
+
 .navbar-collapse {
     justify-content: space-between;
 }
@@ -28,7 +32,6 @@
 /* Navbar Links */
 .navbar-link {
     text-decoration: none;
-    margin-right: 0.75rem;
     transition: color 0.25s ease-in-out;
     font-weight: bold;
     font-family: SF Pro, sans-serif;
