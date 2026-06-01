@@ -8,6 +8,10 @@
     box-shadow: 0.5px 1.1px 1px var(--medium-charcoal-half) !important;
 }
 
+.navbar-collapse {
+    justify-content: space-between;
+}
+
 .brand:hover {
     cursor: pointer;
 }

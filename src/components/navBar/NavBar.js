@@ -7,6 +7,9 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 // Import Logo
 import MaeganLucasLogoWisteria from '../../assets/images/MaeganLucasLogoWisteria.png';
 
+// Import link icons
+import { linkIcons } from '../../data/icons';
+
 
 function NavBar({ onNavBarToggled }) {
 
@@ -88,6 +91,23 @@ function NavBar({ onNavBarToggled }) {
                     <HashLink to="#tech-stack" className='navbar-link' onClick={linkClicked}>Tech Stack</HashLink>
                     <a className='navbar-link' target="_blank" href='https://drive.google.com/file/d/1QafvTC2p9jqgwzVX908Gs2y2IseRtbnT/view?usp=drive_link'>Resume</a>
                 </Nav>
+                <div className='navbar-link-icons'>
+                    <a href={linkIcons[1].href}>
+                        <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
+                            <path d={linkIcons[1].d}/>
+                        </svg>
+                    </a>
+                    <a href={linkIcons[2].href}>
+                        <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
+                            <path d={linkIcons[2].d} />
+                        </svg>
+                    </a>
+                    <a href={linkIcons[3].href}>
+                        <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
+                            <path d={linkIcons[3].d} />
+                        </svg>
+                    </a>
+                </div>
             </Navbar.Collapse>
         </Navbar>
     );

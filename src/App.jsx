@@ -32,21 +32,24 @@ function App() {
           </Routes>
         </main>
         <footer className="App-footer">
-          <a href={linkIcons[1].href}>
-          <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
-            <path d={linkIcons[1].d}/>
-          </svg>
-          </a>
-          <a href={linkIcons[2].href}>
-            <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
-              <path d={linkIcons[2].d} />
+          <div>
+            <a href={linkIcons[1].href}>
+            <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
+              <path d={linkIcons[1].d}/>
             </svg>
-          </a>
-          <a href={linkIcons[3].href}>
-            <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
-              <path d={linkIcons[3].d} />
-            </svg>
-          </a>
+            </a>
+            <a href={linkIcons[2].href}>
+              <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
+                <path d={linkIcons[2].d} />
+              </svg>
+            </a>
+            <a href={linkIcons[3].href}>
+              <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
+                <path d={linkIcons[3].d} />
+              </svg>
+            </a>
+          </div>
+          <p className='small-p'>&copy; 2026 Maegan A. Lucas. All rights reserved.</p>
         </footer>
       </div>
     </Router>
