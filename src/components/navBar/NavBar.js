@@ -86,6 +86,7 @@ function NavBar({ onNavBarToggled }) {
                     <HashLink to="#experience" className="navbar-link" onClick={linkClicked}>Experience</HashLink>
                     <HashLink to="#projects" className='navbar-link' onClick={linkClicked}>Projects</HashLink>
                     <HashLink to="#tech-stack" className='navbar-link' onClick={linkClicked}>Tech Stack</HashLink>
+                    <a className='navbar-link' target="_blank" href='https://drive.google.com/file/d/1QafvTC2p9jqgwzVX908Gs2y2IseRtbnT/view?usp=drive_link'>Resume</a>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
