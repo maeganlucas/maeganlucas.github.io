@@ -31,6 +31,14 @@
   margin: auto;
 }
 
+.hero-row h1 {
+  font-size: 3.5rem;
+}
+
+.hero-row p {
+  font-size: 1.35rem;
+}
+
 .hero-stars {
   height: 2rem;
 }
