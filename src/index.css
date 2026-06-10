@@ -2,19 +2,27 @@
 [data-bs-theme-dark]
 {
   color-scheme: dark;
-  --wisteria: #C8A3DC;
-  --cream: #F8F5E7;
-  --light-charcoal: #404040;
+  --wisteria: #c8a3dc;
+  --ivory-mist: #f8f5e7;
+  --ivory-mist-75: #f8f5e775;
   --charcoal: #171718;
+  --vintage-grape: #56495e;
+  --shadow-grey: #3a333f;
+  --shadow-grey-half: #3a333f55;
+  --dark-charcoal: #171717;
 }
 
 [data-bs-theme-light]
 {
   color-scheme: light;
-  --wisteria: #C8A3DC;
-  --cream: #F8F5E7;
-  --light-charcoal: #404040;
+  --wisteria: #c8a3dc;
+  --ivory-mist: #f8f5e7;
+  --ivory-mist-75: #f8f5e775;
   --charcoal: #171718;
+  --vintage-grape: #56495e;
+  --shadow-grey: #3a333f;
+  --shadow-grey-half: #3a333f55;
+  --dark-charcoal: #171717;
 }
 
 body {

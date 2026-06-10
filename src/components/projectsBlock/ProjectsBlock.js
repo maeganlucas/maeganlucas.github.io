@@ -107,7 +107,7 @@ function ProjectsBlock () {
                             <Card.Title>
                                 <div className='title-row'>
                                     {projects[key]["name"]}
-                                    <p className='project-type'>({projectType(projects[key]["type"])})</p>
+                                    <p className='project-type' style={{color: "var(--wisteria)"}}>({projectType(projects[key]["type"])})</p>
                                 </div>
                             </Card.Title>
                             <div className='card-text'>{projects[key]["desc"]}</div>

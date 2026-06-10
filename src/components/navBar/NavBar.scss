@@ -5,7 +5,7 @@
     position: fixed;
     width: 100vw;
     z-index: 100;
-    box-shadow: 0.5px 1.1px 1px var(--medium-charcoal-half) !important;
+    box-shadow: 0.5px 1.1px 1px var(--shadow-grey-half) !important;
 }
 
 .navbar-nav {
@@ -36,7 +36,7 @@
     font-weight: bold;
     font-family: SF Pro, sans-serif;
     margin-bottom: 0.15rem;
-    color: var(--cream);
+    color: var(--ivory-mist);
 }
 
 .navbar-link:hover {

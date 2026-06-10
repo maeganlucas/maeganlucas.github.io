@@ -42,7 +42,7 @@ function HomePage({statusOfNavBar}) {
                   <path className='wisteria-star-icon' d={starIcons[3].d}/>
                 </svg>
               </div>
-              <p>I am a Frontend Developer and a UI/UX Designer all rolled into one! <strong>I design and implement high-quality UI features.</strong></p>
+              <p>I am a Frontend Developer and a UI/UX Designer all rolled into one! I design and implement high-quality UI features.</p>
               <p style={{marginBottom: 0}}>Check out my work below!</p>
             </div>
             <img src={pfp} alt="Picture of me!" className='pfp'/>

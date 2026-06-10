@@ -26,7 +26,7 @@ function ExperienceBlock () {
                     <div key={id}>
                         <div className='subheader-row'>
                             <h2>{position} @</h2>
-                            <h2 className='wisteria-text'>&nbsp;{company}</h2>
+                            <h2 className='wisteria-text'>&nbsp;<strong>{company}</strong></h2>
                         </div>
                         <div className='subheader-row'>
                             <svg xmlns={experienceIcons[0].xmlns} viewBox={experienceIcons[0].viewBox} className={experienceIcons[1].class}>
