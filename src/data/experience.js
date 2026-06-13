@@ -45,6 +45,10 @@ export const careerFeatures = [
     {
         id: 6,
         description: "Updated the application's Permissions Denied message to include a list of the permission that were denied by the user."
+    },
+    {
+        id: 7,
+        description: "Created a yearly wrap-up video for the local Honeywell Women Employees Network (HWEN) in Tech group in the fashion of the year's Spotify Wrapped."
     }
 ]
 
