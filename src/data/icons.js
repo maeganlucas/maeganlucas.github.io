@@ -161,6 +161,9 @@ export const skillIcons = {
     "Scrumwise": {
         src: require("../assets/images/skills/scrumwise.png")
     },
+    "SonarQube": {
+        src: require("../assets/images/skills/sonarqube.svg").default
+    },
     "Sourcetree": {
         src: require("../assets/images/skills/sourcetree.png")
     },

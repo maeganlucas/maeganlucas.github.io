@@ -21,6 +21,6 @@ export const techStack = {
     },
     "Other Tools": {
         name: "Other Tools",
-        skills: ["Jira", "Confluence", "Jenkins", "Artifactory", "Scrumwise"]
+        skills: ["Jira", "Confluence", "Jenkins", "Artifactory", "Scrumwise", "SonarQube"]
     }
 }
