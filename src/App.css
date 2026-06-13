@@ -98,6 +98,10 @@ p {
     font-size: 1.05rem;
 }
 
+.issue-text {
+  margin-top: 0 !important;
+}
+
 .fixed-buttons {
   position: fixed;
   bottom: 10vh;

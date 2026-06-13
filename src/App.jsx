@@ -50,6 +50,7 @@ function App() {
             </a>
           </div>
           <p className='small-p'>&copy; 2026 Maegan A. Lucas. All rights reserved.</p>
+          <p className='small-p issue-text'>This website is coded from scratch! If you see something that's not quite right, let me know <a className='link-text' target='_blank' href='https://github.com/maeganlucas/maeganlucas.github.io/issues/new?template=bug-report.yml'>here</a>.</p>
         </footer>
       </div>
     </Router>
