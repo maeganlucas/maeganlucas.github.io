@@ -90,6 +90,7 @@ function NavBar({ onNavBarToggled }) {
                     <HashLink to="#projects" className='navbar-link' onClick={linkClicked}>Projects</HashLink>
                     <HashLink to="#tech-stack" className='navbar-link' onClick={linkClicked}>Tech Stack</HashLink>
                     <a className='navbar-link' target="_blank" href='https://drive.google.com/file/d/1QafvTC2p9jqgwzVX908Gs2y2IseRtbnT/view?usp=drive_link'>Resume</a>
+                    <HashLink to="#contact" className='navbar-link' onClick={linkClicked}>Contact</HashLink>
                 </Nav>
                 <div className='navbar-link-icons'>
                     <a href={linkIcons[1].href}>

@@ -1,0 +1,50 @@
+.contact-section {
+    text-align: left;
+    margin-left: 6.3rem;
+}
+
+.entry-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+
+.entry-column div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    color: var(--ivory-mist);
+}
+
+.entry-column p {
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    color: var(--ivory-mist);
+}
+
+%inputs-base {
+    background-color: var(--charcoal);
+    color: var(--ivory-mist);
+    border-color: rgba(64, 64, 64, 0.4) !important;
+    border-style: solid;
+    border-width: 1.5px !important;
+    border-radius: 10px !important;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+    padding-left: 0.5rem;
+    max-width: 850px;
+}
+
+::placeholder {
+    color: var(--ivory-mist-75);
+}
+
+.entry-column input {
+    @extend %inputs-base;
+    height: 2.5rem;
+}
+
+.entry-column textarea {
+    @extend %inputs-base;
+    padding-top: .2rem;
+    resize: vertical;
+}
