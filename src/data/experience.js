@@ -41,6 +41,10 @@ export const careerFeatures = [
     {
         id: 5,
         description: "Led the design and implementation of a new feature allowing for the ability to pull accurate serial number for Android devices working on Android 10 (Q) and above."
+    },
+    {
+        id: 6,
+        description: "Updated the application's Permissions Denied message to include a list of the permission that were denied by the user."
     }
 ]
 
