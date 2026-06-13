@@ -17,7 +17,7 @@ export const techStack = {
     },
     "Design Tools": {
         name: "Design Tools",
-        skills: ["Figma", "Canva", "Adobe Photoshop", "Butter"]
+        skills: ["Figma", "Canva", "Affinity", "Adobe Photoshop", "Butter"]
     },
     "Other Tools": {
         name: "Other Tools",

@@ -80,6 +80,9 @@ export const skillIcons = {
     "Adobe Photoshop": {
         src: require("../assets/images/skills/adobePhotoshop.png")
     },
+    "Affinity": {
+        src: require("../assets/images/skills/affinity.png")
+    },
     "Android": {
         src: require("../assets/images/skills/android.png")
     },
