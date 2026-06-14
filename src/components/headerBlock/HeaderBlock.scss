@@ -21,6 +21,10 @@
     padding-right: 0.5rem;
 }
 
+.header-star-icons:hover {
+    animation: wiggle 0.3s ease-in-out;
+}
+
 .header-row {
     flex-direction: row;
 }
