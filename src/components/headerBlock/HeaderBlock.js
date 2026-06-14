@@ -4,7 +4,7 @@ import './HeaderBlock.scss';
 
 import { starIcons } from '../../data/icons';
 
-function HeaderBlock({ headerName, moreInfo }) {
+function HeaderBlock({ headerName }) {
     return (
         <Container className='full-width-container'>
             <div className='header-block'>
@@ -16,7 +16,6 @@ function HeaderBlock({ headerName, moreInfo }) {
                 <h1>{headerName}</h1>
                 <hr />
             </div>
-            <p className='small-p more-details-text' hidden={!moreInfo}>Click the download button in the bottom-right corner of the screen for a PDF portfolio with more details!</p>
         </Container>
     );
 }

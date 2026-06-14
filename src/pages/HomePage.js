@@ -51,22 +51,22 @@ function HomePage({statusOfNavBar}) {
         </section>
         <section id='hero-spacer' />
         <section id='experience'>
-          <HeaderBlock headerName={"Experience"} moreInfo={true} />
+          <HeaderBlock headerName={"Experience"} />
           <ExperienceBlock />
         </section>
         <section id='spacer' />
         <section id='projects'>
-          <HeaderBlock headerName={"Projects"} moreInfo={true}/>
+          <HeaderBlock headerName={"Projects"} />
           <ProjectsBlock />
         </section>
         <section id='spacer' />
         <section id='tech-stack'>
-          <HeaderBlock headerName={"Tech Stack"} moreInfo={false} />
+          <HeaderBlock headerName={"Tech Stack"} />
           <TechStackBlock />
         </section>
         <section id='spacer' />
         <section id='contact'>
-          <HeaderBlock headerName={"Contact"} moreInfo={false} />
+          <HeaderBlock headerName={"Contact"} />
           <ContactForm />
         </section>
         <section id='spacer' />
