@@ -35,3 +35,21 @@
     max-width: 860px;
 }
 
+@media (max-width: 768px) {
+  .header-star-icons {
+    height: 3rem;
+  }
+
+  .header-block h1 {
+    margin: 0 0;
+    margin-right: 0.25rem;
+  }
+}
+
+@media (max-width: 450px)
+{
+   .header-block {
+     margin-left: -2rem;
+   }
+}
+

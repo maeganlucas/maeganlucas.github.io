@@ -68,7 +68,7 @@
 .App-footer p {
   margin-top: 10px;
   margin-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 
 h1 {
@@ -123,11 +123,15 @@ p {
 }
 
 #hero-spacer {
-  height: 30rem;
+  height: 22rem;
 }
 
 #spacer {
   height: 10rem;
+}
+
+#final-spacer {
+  height: 2rem;
 }
 
 /* Fonts */
@@ -157,17 +161,33 @@ p {
   font-style: italic;
 }
 
+
 /* Responsive Design */
+@media (max-width: 950px)
+{
+  #hero-spacer {
+    height: 15rem;
+  }
+}
+
 @media (max-width: 768px) {
   .App-main {
     padding: 1rem;
   }
   
-  .App-header h1 {
-    font-size: 2rem;
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.25rem !important;
   }
   
-  .App-header p {
-    font-size: 1rem;
+  p {
+    font-size: 1rem !important;
+  }
+
+  .small-p {
+    font-size: 0.85rem;
   }
 }

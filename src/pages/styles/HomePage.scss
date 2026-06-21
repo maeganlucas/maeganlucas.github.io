@@ -16,7 +16,7 @@
 }
 
 #experience, #projects, #tech-stack, #contact {
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 6rem;
 }
 
 .hero-break {
@@ -29,6 +29,7 @@
   align-items: center;
   gap: 3rem;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .hero-row h1 {
@@ -47,12 +48,18 @@
   animation: wiggle 0.3s ease-in-out;
 }
 
+.hero-navbar {
+  transition: padding-top 300ms ease-in-out;
+}
+
 .hero-navbar-closed {
-  top: 22vh;
+  @extend .hero-navbar;
+  padding-top: 25vh;
 }
 
 .hero-navbar-open {
-  top: 15vh;
+  @extend .hero-navbar;
+  padding-top: 38vh;
 }
 
 .pfp {
@@ -71,7 +78,7 @@
   }
 
   .hero-navbar-closed {
-    top: 10vh;
+    padding-top: 10vh;
   }
 
   .pfp {
@@ -81,13 +88,27 @@
   .hero-break {
     height: 1rem;
   }
+
+  .hero-row p {
+    font-size: 1.2rem;
+  }
+
+  .hero-break {
+    height: 3.1rem;
+  }
 }
 
 
-@media (max-height: 800px) {
-  .hero-navbar-closed {
-    top: 8vh;
+@media (max-width: 380px)
+{
+  .pfp {
+    height: 14rem;
   }
+}
 
-  
+@media (max-width: 375px)
+{
+  .pfp {
+    height: 12rem;
+  }
 }

@@ -43,3 +43,17 @@
     color: var(--wisteria);
     cursor: pointer;
 }
+
+@media (max-width: 991px)
+{
+    .navbar-link-icons
+    {
+        margin-top: 1rem;
+        padding-left: 0.8rem;
+
+    }
+
+    .navbar-link{
+        margin: auto;
+    }
+}

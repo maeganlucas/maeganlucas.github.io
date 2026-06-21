@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './ExperienceBlock.scss';
 
 /* Import Data */
@@ -5,7 +6,22 @@ import { experience, careerFeatures, internFeatures } from '../../data/experienc
 import { experienceIcons, starIcons } from '../../data/icons';
 
 function ExperienceBlock () {
+    const rowBreakWidth = 860;
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     var featureData;
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        }
+    }, [windowWidth]);
 
     const setFeatureData = (position) => {
         if (position === 0)
@@ -26,9 +42,9 @@ function ExperienceBlock () {
                     <div key={id}>
                         <div className='subheader-row'>
                             <h2>{position} @</h2>
-                            <h2 className='wisteria-text'>&nbsp;<strong>{company}</strong></h2>
+                            {(windowWidth >= rowBreakWidth) ? (<h2 className='wisteria-text'>&nbsp;<strong>{company}</strong></h2>) : (<h2 className='wisteria-text'><strong>{company}</strong></h2>)}
                         </div>
-                        <div className='subheader-row'>
+                        <div className='subheader-2-row'>
                             <svg xmlns={experienceIcons[0].xmlns} viewBox={experienceIcons[0].viewBox} className={experienceIcons[1].class}>
                                 <path d={experienceIcons[1].d} />
                             </svg>
@@ -40,8 +56,8 @@ function ExperienceBlock () {
                             <p>{dates}</p>
                         </div>
                         <div className='ip-text' hidden={!ip}>
-                            <p className='small-p bold-text wisteria-text'>Important:</p>
-                            <p className='small-p'>&nbsp;Due to Intellectual Property (IP) agreements, images of features cannot be shared.</p>
+                            <p className='small-p bold-text wisteria-text' id="ip">Important:</p>
+                            {(windowWidth >= rowBreakWidth) ? (<p className='small-p'>&nbsp;Due to Intellectual Property (IP) agreements, images of features cannot be shared.</p>) : (<p className='small-p'>Due to Intellectual Property (IP) agreements, images of features cannot be shared.</p>)}
                         </div>
                         <div className='job-desc-bullets'>
                             {featureData.map(({ id, description}) => (

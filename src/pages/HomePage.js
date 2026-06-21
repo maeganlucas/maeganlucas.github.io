@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react';
-import './styles/HomePage.css';
+import './styles/HomePage.scss';
 
 /* Import components */
 import HeaderBlock from '../components/headerBlock/HeaderBlock';
@@ -69,7 +69,7 @@ function HomePage({statusOfNavBar}) {
           <HeaderBlock headerName={"Contact"} />
           <ContactForm />
         </section>
-        <section id='spacer' />
+        <section id='final-spacer' />
       </div>
     </div>
   );
