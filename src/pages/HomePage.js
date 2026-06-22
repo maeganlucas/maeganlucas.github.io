@@ -7,6 +7,7 @@ import ExperienceBlock from '../components/experienceBlock/ExperienceBlock';
 import ProjectsBlock from '../components/projectsBlock/ProjectsBlock';
 import TechStackBlock from '../components/techStackBlock/TechStackBlock';
 import ContactForm from '../components/contactForm/ContactForm';
+import AboutBlock from '../components/aboutBlock/AboutBlock';
 
 /* Import images and icons */
 import pfp from '../assets/images/MaeganLucasPic.jpg';
@@ -68,6 +69,11 @@ function HomePage({statusOfNavBar}) {
         <section id='contact'>
           <HeaderBlock headerName={"Contact"} />
           <ContactForm />
+        </section>
+        <section id='spacer' />
+        <section id='about'>
+          <HeaderBlock headerName={"About"} />
+          <AboutBlock />
         </section>
         <section id='final-spacer' />
       </div>
