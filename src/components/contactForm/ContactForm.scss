@@ -31,6 +31,37 @@
     color: var(--ivory-mist);
 }
 
+.submit-button {
+    margin-top: 1rem;
+    background-color: var(--charcoal);
+    color: var(--ivory-mist);
+    border-style: solid;
+    border-color: var(--wisteria) !important;
+    height: 2rem;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+    border-width: 1.5px !important;
+    border-radius: 10px !important;
+    font-family: SF Pro, sans-serif;
+    transition: background-color 300ms ease-in-out,
+                color 300ms ease-in-out,
+                font-weight 300ms ease-in-out,
+                border-color 300ms ease-in-out;
+    width: 50%;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: var(--wisteria);
+    color: var(--charcoal);
+    font-weight: bold;
+    border-color: var(--wisteria) !important;
+}
+
+.error-message {
+    color: red;
+    margin-left: 0.5rem;
+}
+
 %inputs-base {
     background-color: var(--charcoal);
     color: var(--ivory-mist);

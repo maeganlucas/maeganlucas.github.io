@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useForm} from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 import './ContactForm.scss';
 
 function ContactForm () {
@@ -27,7 +28,14 @@ function ContactForm () {
                 subject,
                 message
             };
-            
+
+            // Send email
+            await emailjs.send(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                templateParams,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+            );
 
             alert("Your message was sent, thanks for reaching out! I'll get back to you soon!");
         } catch (e)
@@ -50,15 +58,16 @@ function ContactForm () {
                 id="contact-form"
                 onSubmit={handleSubmit(onSubmit)}>
                 <div className='entry-column'>
+                    <p>* Required fields</p>
                     <div>
-                        <p>Name</p>
+                        <p>Name*</p>
                         <input
                             type='text'
                             name='name'
                             {...register('name', {
                                 required: {
                                     value: true,
-                                    message: 'Please enter your name',
+                                    message: 'Please enter your name.',
                                 },
                                 maxLength: {
                                     value: 30,
@@ -66,22 +75,36 @@ function ContactForm () {
                                 },
                             })}
                             placeholder='Name'/>
+                            {errors.name && (
+                                <span className='error-message'>
+                                    {errors.name.message}
+                                </span>
+                            )}
                     </div>
                     <div>
-                        <p>Email</p>
+                        <p>Email*</p>
                         <input
                             type='email'
                             name='email'
                             {...register('email', {
                                 required: {
                                     value: true,
-                                    message: 'Please enter your email address.'
+                                    message: 'Please enter you email address.'
                                 },
-                                pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/})}
+                                pattern: {
+                                    value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                                    message: 'Please enter a valid email address.'
+                                },
+                            })}
                             placeholder="Email" />
+                        {errors.email && (
+                            <span className='error-message'>
+                                {errors.email.message}
+                            </span>
+                        )}
                     </div>
                     <div>
-                        <p>Subject</p>
+                        <p>Subject*</p>
                         <input
                             type='text'
                             name='subject'
@@ -96,9 +119,14 @@ function ContactForm () {
                                 }
                             })}
                             placeholder="Subject" />
+                        {errors.subject && (
+                            <span className='error-message'>
+                                {errors.subject.message}
+                            </span>
+                        )}
                     </div>
                     <div>
-                        <p>Message</p>
+                        <p>Message*</p>
                         <textarea
                             rows={6}
                             name='message'
@@ -109,7 +137,17 @@ function ContactForm () {
                                 }
                             })}
                             placeholder='Enter your message here.' />
+                        {errors.message && (
+                            <span className='error-message'>
+                                {errors.message.message}
+                            </span>
+                        )}
                     </div>
+                    <button
+                        className='submit-button'
+                        type='submit'>
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>
