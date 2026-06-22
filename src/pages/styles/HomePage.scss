@@ -68,6 +68,14 @@
   box-shadow: #c8a3dc40 10px 15px 23px -5px;
 }
 
+@media (max-width: 991px)
+{
+  #experience, #projects, #tech-stack, #contact, #about {
+    scroll-margin-top: 14rem;
+  }
+
+}
+
 @media (max-width: 768px) {
   .home-page-content {
     padding: 2rem;
@@ -95,6 +103,10 @@
 
   .hero-break {
     height: 3.1rem;
+  }
+
+  #experience, #projects, #tech-stack, #contact, #about {
+    scroll-margin-top: 22rem;
   }
 }
 
