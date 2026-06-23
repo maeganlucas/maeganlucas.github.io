@@ -1,0 +1,168 @@
+/* Card Styling */
+.card {
+    background: var(--charcoal) !important;
+    border-color: rgba(64, 64, 64, 0.4) !important;
+    border-width: 1.5px !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+    transition: transform 200ms ease-in-out;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body-justify {
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--ivory-mist) !important;
+    font-family: SF Pro, sans-serif !important;
+    font-weight: bold !important;
+}
+
+.card-text {
+    color: var(--ivory-mist) !important;
+    font-size: 1.05rem !important;
+    font-family: SF Pro, sans-serif !important;
+    margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  row-gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.tech-stack-skills {
+    @extend .skills;
+    margin-top: 1rem;
+}
+
+
+.skills div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+  border: 1.5px solid var(--shadow-grey-half) !important;
+  padding: 2px 5px;
+  border-radius: 7px;
+  background-color: #40404040;
+}
+
+.skills div:hover {
+    animation: wiggle 0.3s ease-in-out;
+}
+
+.skills p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.skills img {
+  height: 1rem;
+}
+
+/* Icon Styles */
+.icon {
+    margin-right: 1rem;
+    fill: var(--ivory-mist);
+    transition: fill 200ms;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+}
+
+.linked-in-icon {
+    @extend .icon;
+    height: 1.4rem;
+}
+
+.github-icon {
+    @extend .icon;
+    width: 1.5rem;
+}
+
+.email-icon {
+    @extend .icon;
+    height: 1.7rem;
+}
+
+.download-icon {
+    @extend .icon;
+    height: 1.5rem;
+}
+
+.icon:hover {
+    fill: var(--wisteria);
+}
+
+.non-hoverable-icon {
+    fill: var(--wisteria);
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+}
+
+.location-icon {
+    @extend .non-hoverable-icon;
+    margin-top: 4.5px;
+    margin-right: 0.5rem;
+    height: 1.2rem;
+}
+
+.calendar-icon {
+    @extend .non-hoverable-icon;
+    margin-top: 6.5px;
+    margin-right: 0.5rem;
+    height: 1rem;
+}
+
+/* Star Icon Styling */
+.cream-star-icon {
+    fill: var(--ivory-mist);
+}
+
+.wisteria-star-icon {
+    fill: var(--wisteria);
+}
+
+.bullet-star-icon {
+    @extend .cream-star-icon;
+    height: 2rem;
+    margin-left: -15px;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+}
+
+.wisteria-text {
+    color: var(--wisteria) !important;
+}
+
+.bold-text {
+    font-weight: bold !important;
+}
+
+.link-text {
+    font-weight: bold !important;
+    color: var(--wisteria) !important;
+}
+
+emphasize-text {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg);}
+    25% { transform: rotate(-3deg);}
+    75% { transform: rotate(3deg);}
+}

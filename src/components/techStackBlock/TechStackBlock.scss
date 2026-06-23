@@ -1,0 +1,79 @@
+.tech-stack-block {
+  text-align: start;
+  margin-left: 6.3rem;
+}
+
+.tech-stack-grid {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  row-gap: 2rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px)
+{
+  .tech-stack-block {
+    margin-left: 7.5rem;
+  }
+
+  .tech-stack-grid {
+    max-width: 750px;
+    column-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 991px)
+{
+  .tech-stack-block {
+    margin-left: clamp(1rem, 25vw, 14.5rem);
+    max-width: 500px;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: repeat(1, 400px);
+  }
+}
+
+@media (max-width: 768px)
+{
+  .tech-stack-block {
+    margin-top: 1rem;
+    margin-left: clamp(1rem, 18.5vw, 15rem);
+  }
+}
+
+@media (max-width: 648px)
+{
+  .tech-stack-block {
+    margin-left: clamp(1rem, 16vw, 15rem);
+  }
+}
+
+@media (max-width: 560px)
+{
+  .tech-stack-grid {
+    grid-template-columns: repeat(1, 325px);
+  }
+}
+
+@media (max-width: 500px)
+{
+  .tech-stack-block {
+    margin-left: clamp(1rem, 8.5vw, 3rem);
+  }
+}
+
+@media (max-width: 430px)
+{
+  .tech-stack-block {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 380px)
+{
+    .tech-stack-grid {
+      grid-template-columns: repeat(1, 250px);
+    }
+}

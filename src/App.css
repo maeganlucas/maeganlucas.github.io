@@ -1,0 +1,193 @@
+/* Main App Styles */
+:root,
+[data-bs-theme=dark]
+{
+  color-scheme: dark;
+  --wisteria: #c8a3dc;
+  --ivory-mist: #f8f5e7;
+  --ivory-mist-75: #f8f5e775;
+  --charcoal: #171718;
+  --vintage-grape: #56495e;
+  --shadow-grey: #3a333f;
+  --shadow-grey-half: #3a333f55;
+  --dark-charcoal: #171717;
+}
+
+
+[data-bs-theme=light]
+{
+  color-scheme: light;
+  --wisteria: #c8a3dc;
+  --ivory-mist: #f8f5e7;
+  --ivory-mist-75: #f8f5e775;
+  --charcoal: #171718;
+  --vintage-grape: #56495e;
+  --shadow-grey: #3a333f;
+  --shadow-grey-half: #3a333f55;
+  --dark-charcoal: #070707;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--charcoal);
+}
+
+.texture {
+  background-color: var(--charcoal);
+  position: relative;
+}
+
+.texture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #171718 14px ), repeating-linear-gradient( #40404075, #40404075 );
+}
+
+.App-main {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  opacity: 1 !important;
+}
+
+.App-footer {
+  padding: 1rem;
+  background-color: var(--charcoal);
+  width: 100vw;
+  box-shadow: inset 0.5px -1.1px 0.1rem 2px var(--shadow-grey-half) !important;
+}
+
+.App-footer p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 0.8rem !important;
+}
+
+h1 {
+  color: var(--ivory-mist) !important;
+  font-size: 2.5rem;
+  font-family: Qalogre, serif;
+}
+
+h2 {
+  color: var(--ivory-mist) !important;
+  font-size: 1.75rem;
+  font-family: SF Pro, sans-serif;
+  font-weight: bold;
+}
+
+a {
+  font-family: SF Pro, sans-serif;
+}
+
+p {
+  color: var(--ivory-mist);
+  font-family: SF Pro, sans-serif;
+  font-size: 1.2rem;
+}
+
+.small-p {
+    font-size: 1.05rem;
+}
+
+.issue-text {
+  margin-top: 0 !important;
+}
+
+.fixed-buttons {
+  position: fixed;
+  bottom: 10vh;
+  right: 2vw;
+  z-index: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.full-width-container {
+  max-width: 100vw;
+  margin: 0;
+}
+
+#hero-spacer {
+  height: 22rem;
+}
+
+#spacer {
+  height: 10rem;
+}
+
+#final-spacer {
+  height: 2rem;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Qalogre";
+  src: url('./fonts/Qalogre.otf');
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url('./fonts/SF-Pro-Rounded-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url('./fonts/SF-Pro-Rounded-Medium.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url('./fonts/SF-Pro-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/* Responsive Design */
+@media (max-width: 950px)
+{
+  #hero-spacer {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-main {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  
+  p {
+    font-size: 1rem !important;
+  }
+
+  .small-p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,128 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding-left: clamp(1rem, 15vw, 3rem);
+    width: 100%;
+}
+
+.contact-section form {
+    width: 100%;
+    max-width: 850px;
+}
+
+.entry-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+
+.entry-column div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    color: var(--ivory-mist);
+}
+
+.entry-column p {
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    color: var(--ivory-mist);
+}
+
+.submit-button {
+    margin-top: 1rem;
+    background-color: var(--charcoal);
+    color: var(--ivory-mist);
+    border-style: solid;
+    border-color: var(--wisteria) !important;
+    height: 2rem;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+    border-width: 1.5px !important;
+    border-radius: 10px !important;
+    font-family: SF Pro, sans-serif;
+    transition: background-color 300ms ease-in-out,
+                color 300ms ease-in-out,
+                font-weight 300ms ease-in-out,
+                border-color 300ms ease-in-out;
+    width: 50%;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: var(--wisteria);
+    color: var(--charcoal);
+    font-weight: bold;
+    border-color: var(--wisteria) !important;
+}
+
+.error-message {
+    color: red;
+    margin-left: 0.5rem;
+}
+
+%inputs-base {
+    background-color: var(--charcoal);
+    color: var(--ivory-mist);
+    border-color: rgba(64, 64, 64, 0.4) !important;
+    border-style: solid;
+    border-width: 1.5px !important;
+    border-radius: 10px !important;
+    box-shadow: var(--dark-charcoal) 6px 13px 23px -5px;
+    padding-left: 0.5rem;
+    max-width: 850px;
+}
+
+::placeholder {
+    color: var(--ivory-mist-75);
+}
+
+.entry-column input {
+    @extend %inputs-base;
+    height: 2.5rem;
+}
+
+.entry-column textarea {
+    @extend %inputs-base;
+    padding-top: .2rem;
+    resize: vertical;
+}
+
+@media (max-width: 1200px)
+{
+    .contact-section form {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .contact-section form {
+        max-width: 575px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .contact-section form {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 631px)
+{
+    .contact-section {
+        padding-left: clamp(2vw, 2vw, 3rem);
+    }
+    .contact-section form {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 545px)
+{
+    .contact-section form {
+        margin-top: 1.25rem;
+    }
+}

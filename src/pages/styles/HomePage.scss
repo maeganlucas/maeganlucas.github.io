@@ -1,0 +1,126 @@
+.home-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1cqi;
+  text-align: center;
+}
+
+.home-page-content {
+  font-family: "SF Pro";
+  position: relative;
+  transition: top 0.20s ease-in-out;
+}
+
+#hero {
+  position: relative;
+}
+
+#experience, #projects, #tech-stack, #contact, #about {
+  scroll-margin-top: 6rem;
+}
+
+.hero-break {
+  height: 3rem;
+}
+
+.hero-row {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.hero-row h1 {
+  font-size: 3.5rem;
+}
+
+.hero-row p {
+  font-size: 1.35rem;
+}
+
+.hero-stars {
+  height: 2rem;
+}
+
+.hero-stars:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
+
+.hero-navbar {
+  transition: padding-top 300ms ease-in-out;
+}
+
+.hero-navbar-closed {
+  @extend .hero-navbar;
+  padding-top: 25vh;
+}
+
+.hero-navbar-open {
+  @extend .hero-navbar;
+  padding-top: 38vh;
+}
+
+.pfp {
+  height: 22rem;
+  border-radius: 22px;
+  box-shadow: #c8a3dc40 10px 15px 23px -5px;
+}
+
+@media (max-width: 991px)
+{
+  #experience, #projects, #tech-stack, #contact, #about {
+    scroll-margin-top: 14rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .home-page-content {
+    padding: 2rem;
+  }
+
+  .hero-row {
+    flex-direction: column;
+  }
+
+  .hero-navbar-closed {
+    padding-top: 10vh;
+  }
+
+  .pfp {
+    height: 17rem;
+  }
+
+  .hero-break {
+    height: 1rem;
+  }
+
+  .hero-row p {
+    font-size: 1.2rem;
+  }
+
+  .hero-break {
+    height: 3.1rem;
+  }
+
+  #experience, #projects, #tech-stack, #contact, #about {
+    scroll-margin-top: 22rem;
+  }
+}
+
+
+@media (max-width: 380px)
+{
+  .pfp {
+    height: 14rem;
+  }
+}
+
+@media (max-width: 375px)
+{
+  .pfp {
+    height: 12rem;
+  }
+}

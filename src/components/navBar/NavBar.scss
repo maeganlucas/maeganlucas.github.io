@@ -1,0 +1,59 @@
+.navbar {
+    background-color: var(--charcoal);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0.5px 1.1px 1px var(--shadow-grey-half) !important;
+}
+
+.navbar-nav {
+    gap: 0.75rem;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.brand:hover {
+    cursor: pointer;
+}
+
+.maegan-lucas-logo {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.navbar-toggle {
+    border-width: 0;
+}
+
+/* Navbar Links */
+.navbar-link {
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+    font-weight: bold;
+    font-family: SF Pro, sans-serif;
+    margin-bottom: 0.15rem;
+    color: var(--ivory-mist);
+}
+
+.navbar-link:hover {
+    color: var(--wisteria);
+    cursor: pointer;
+}
+
+@media (max-width: 991px)
+{
+    .navbar-link-icons
+    {
+        margin-top: 1rem;
+        padding-left: 0.8rem;
+
+    }
+
+    .navbar-link{
+        margin: auto;
+    }
+}
