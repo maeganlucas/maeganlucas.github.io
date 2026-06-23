@@ -1,0 +1,77 @@
+name: Bug Report
+description: Create a report to let me know about issues with my portfolio.
+title: "[BUG]: <Insert a name for the bug here>"
+labels: ["bug"]
+assignees: 
+  - maeganlucas
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this report! It will help me to keep improving my portfolio site.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can I reach you if I need more info?
+      placeholder: ex. email@example.com
+    validations:
+        required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Exs. I can't...,  This seems off..., etc.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: Steps to reproduce the behavior.
+      placeholder: |
+       1. Go to '...'
+       2. Click on '....'
+       3. Scroll down to '....'
+       4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to see/do.
+      placeholder: It should...
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser
+      description: On what browsers are you seeing the issue?
+      multiple: true
+      options:
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Firefox
+        - DuckDuckGo
+        - Ecosia
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: On what device(s) are you seeing the issue? (While optional, this will greatly help me to ensure the issue is fixed properly.)
+      placeholder: Exs. iPhone 17, Macbook Air, etc.
+    validations:
+      required: false
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add some screenshots to help explain your problem.
+    validations:
+      required: false
