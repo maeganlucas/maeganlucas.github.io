@@ -8,10 +8,10 @@ export const projects = {
     "Personal Portfolio": {
         id: 0,
         name: "Personal Portfolio",
-        desc: "desc",
+        desc: "This very website is my own personal project to help learn and expand upon my web development skills. The first iteration was completed using HTML, CSS, and a little bit of JavaScript. Now on its second iteration, the portfolio site was mocked up in Figma and then revamped with React. The site is not finished though...there's always new skills to be learned and old skills to be bolstered!",
         type: ProjectType.PERSONAL,
         githubLink: "1",
-        skills: ["HTML","CSS", "React.js", "Figma", "GitHub", "GitHub Desktop"]
+        skills: ["HTML","CSS", "React.js", "JavaScript", "Figma", "GitHub", "GitHub Desktop"]
     },
     "NeMo ASR Website": {
         id: 1,
@@ -32,7 +32,7 @@ export const projects = {
     "Roy G. Biv": {
         id: 3,
         name: "Roy G. Biv",
-        desc: "A 4-person team project, in which I acted as Scrum Master and Developer. The goal of the project was to aid those with color blindness. Using Python, a desktop software was developed that allowed users to fiter their screen based off preference to help differentiate colors. I was responsible for the Color Detection feature!",
+        desc: "A 4-person team project, in which I acted as Scrum Master and Developer. The goal of the project was to aid those with color blindness. Using Python, a desktop software was developed that allowed users to fiter their screen based off preference to help differentiate colors. I was responsible for the Color Detection feature which determined how many pixels of each color were in a selected range!",
         type: ProjectType.TEAM,
         githubLink: "https://github.com/maeganlucas/RoyGBiv",
         skills: ["Python", "GitHub", "Scrumwise"]

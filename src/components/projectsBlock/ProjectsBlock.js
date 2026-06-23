@@ -5,6 +5,7 @@ import { default as SkillTag } from '../skillTag/SkillTag';
 
 import { projects, ProjectType } from '../../data/projects';
 import { linkIcons } from '../../data/icons';
+import portfolio from '../../assets/images/projects/portfolio.png';
 import nemo_asr from '../../assets/images/projects/nemo_asr.png';
 import book_nook from '../../assets/images/projects/book_nook.png';
 import roygbiv from '../../assets/images/projects/roy_g_biv.png';
@@ -13,7 +14,7 @@ function ProjectsBlock () {
     const getImageSource = (id) => {
         switch (id) {
             case 0:
-                return null;
+                return portfolio;
             case 1:
                 return nemo_asr;
             case 2:
