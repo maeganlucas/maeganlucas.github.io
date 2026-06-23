@@ -44,7 +44,7 @@ export const careerFeatures = [
     },
     {
         id: 6,
-        description: "Updated the application's Permissions Denied message to include a list of the permission that were denied by the user."
+        description: "Updated the application's Permissions Denied message to include a list of the permissions that were denied by the user."
     },
     {
         id: 7,
