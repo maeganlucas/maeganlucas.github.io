@@ -33,17 +33,17 @@ function App() {
         </main>
         <footer className="App-footer">
           <div>
-            <a href={linkIcons[1].href}>
+            <a href={linkIcons[1].href} target='_blank'>
             <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
               <path d={linkIcons[1].d}/>
             </svg>
             </a>
-            <a href={linkIcons[2].href}>
+            <a href={linkIcons[2].href} target='_blank'>
               <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
                 <path d={linkIcons[2].d} />
               </svg>
             </a>
-            <a href={linkIcons[3].href}>
+            <a href={linkIcons[3].href} target='_blank'>
               <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
                 <path d={linkIcons[3].d} />
               </svg>
