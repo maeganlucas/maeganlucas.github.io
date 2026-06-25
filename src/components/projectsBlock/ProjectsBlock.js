@@ -119,7 +119,7 @@ function ProjectsBlock () {
                             </div>
                             <p className='small-p wisteria-text' hidden={projects[key]["githubLink"] !== ""}>As this project is still being worked on, there is no public GitHub repository.</p>
                             <div className='link-row'>
-                                <a href={projects[key]["githubLink"]} hidden={projects[key]["githubLink"] === ""}>
+                                <a href={projects[key]["githubLink"]} hidden={projects[key]["githubLink"] === ""} target='_blank'>
                                     <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
                                         <path d={linkIcons[2].d} />
                                     </svg>
