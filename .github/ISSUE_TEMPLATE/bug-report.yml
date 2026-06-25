@@ -1,6 +1,6 @@
 name: Bug Report
 description: Create a report to let me know about issues with my portfolio.
-title: "[BUG]: <Insert a name for the bug here>"
+title: "[BUG] <Insert a name for the bug here>"
 labels: ["bug"]
 assignees: 
   - maeganlucas
