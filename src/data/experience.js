@@ -2,7 +2,7 @@ export const experience = [
     {
         id: 0,
         position: "Software Engineer I",
-        company: "Honeywell",
+        company: "Honeywell Technologies (formerly Honeywell)",
         ip: true,
         location: "Pittsburgh, PA",
         dates: "May 2024 - Present"
@@ -10,7 +10,7 @@ export const experience = [
     {
         id: 1,
         position: "Software Engineering Intern",
-        company: "Honeywell",
+        company: "Honeywell Technologies (formerly Honeywell)",
         ip: true,
         location: "Pittsburgh, PA",
         dates: "May 2023 - August 2023"
