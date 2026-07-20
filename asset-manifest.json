@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.42573156.css",
-    "main.js": "./static/js/main.952b543c.js",
+    "main.css": "./static/css/main.aa8ac42f.css",
+    "main.js": "./static/js/main.8ef1ce60.js",
     "static/media/SF-Pro-Italic.ttf": "./static/media/SF-Pro-Italic.7b7a52f4e6683e6a5342.ttf",
     "static/media/SF-Pro-Rounded-Light.otf": "./static/media/SF-Pro-Rounded-Light.789e99171aa98c4451bc.otf",
     "static/media/SF-Pro-Rounded-Medium.otf": "./static/media/SF-Pro-Rounded-Medium.21849377ac0dfd90d93e.otf",
@@ -51,11 +51,11 @@
     "static/media/confluence.svg": "./static/media/confluence.0e202a3d3c7c039a598c4649b32b2b84.svg",
     "index.html": "./index.html",
     "static/media/sonarqube.svg": "./static/media/sonarqube.f201b9e763ee02126c6377e1ef906698.svg",
-    "main.42573156.css.map": "./static/css/main.42573156.css.map",
-    "main.952b543c.js.map": "./static/js/main.952b543c.js.map"
+    "main.aa8ac42f.css.map": "./static/css/main.aa8ac42f.css.map",
+    "main.8ef1ce60.js.map": "./static/js/main.8ef1ce60.js.map"
   },
   "entrypoints": [
-    "static/css/main.42573156.css",
-    "static/js/main.952b543c.js"
+    "static/css/main.aa8ac42f.css",
+    "static/js/main.8ef1ce60.js"
   ]
 }
