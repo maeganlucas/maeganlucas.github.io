@@ -104,7 +104,7 @@ function ProjectsBlock () {
                 {Object.keys(projects).map((key, id) => (
                     <Card key={id} style={{ width: '18rem' }}>
                         <Card.Body className='card-body-justify'>
-                            <Card.Img src={getImageSource(projects[key]["id"])} variant='top' />
+                            <Card.Img alt={projects[key]["name"] + " Title Image"} src={getImageSource(projects[key]["id"])} variant='top' />
                             <Card.Title>
                                 <div className='title-row'>
                                     {projects[key]["name"]}
@@ -119,7 +119,7 @@ function ProjectsBlock () {
                             </div>
                             <p className='small-p wisteria-text' hidden={projects[key]["githubLink"] !== ""}>As this project is still being worked on, there is no public GitHub repository.</p>
                             <div className='link-row'>
-                                <a href={projects[key]["githubLink"]} hidden={projects[key]["githubLink"] === ""} target='_blank'>
+                                <a href={projects[key]["githubLink"]} hidden={projects[key]["githubLink"] === ""} target='_blank' aria-label={"GitHub Repository Link for " + projects[key]["name"]}>
                                     <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
                                         <path d={linkIcons[2].d} />
                                     </svg>

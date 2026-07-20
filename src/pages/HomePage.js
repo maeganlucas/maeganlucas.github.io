@@ -55,22 +55,22 @@ function HomePage({statusOfNavBar}) {
           <HeaderBlock headerName={"Experience"} />
           <ExperienceBlock />
         </section>
-        <section id='spacer' />
+        <section className="spacer" />
         <section id='projects'>
           <HeaderBlock headerName={"Projects"} />
           <ProjectsBlock />
         </section>
-        <section id='spacer' />
+        <section className="spacer" />
         <section id='tech-stack'>
           <HeaderBlock headerName={"Tech Stack"} />
           <TechStackBlock />
         </section>
-        <section id='spacer' />
+        <section className="spacer" />
         <section id='contact'>
           <HeaderBlock headerName={"Contact"} />
           <ContactForm />
         </section>
-        <section id='spacer' />
+        <section className="spacer" />
         <section id='about'>
           <HeaderBlock headerName={"About"} />
           <AboutBlock />

@@ -8,7 +8,7 @@ export const projects = {
     "Personal Portfolio": {
         id: 0,
         name: "Personal Portfolio",
-        desc: "This very website is my own personal project to help learn and expand upon my web development skills. The first iteration was completed using HTML, CSS, and a little bit of JavaScript. Now on its second iteration, the portfolio site was mocked up in Figma and then revamped with React. The site is not finished though...there's always new skills to be learned and old skills to be bolstered!",
+        desc: "This very website is my own personal project to help learn and expand upon my web development skills. The first iteration was completed using HTML, CSS, and a little bit of JavaScript. Now on its second iteration, the portfolio site was mocked up in Figma and then revamped with React. It is also Web Content Accessibility Guidelines (WCAG) compliant. The site is not finished though...there's always new skills to be learned and old skills to be bolstered!",
         type: ProjectType.PERSONAL,
         githubLink: "https://github.com/maeganlucas/maeganlucas.github.io",
         skills: ["HTML","CSS", "React.js", "JavaScript", "Figma", "GitHub", "GitHub Desktop"]

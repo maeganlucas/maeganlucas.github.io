@@ -94,18 +94,18 @@ function NavBar({ onNavBarToggled }) {
                      <HashLink to="#about" className='navbar-link' onClick={linkClicked}>About</HashLink>
                 </Nav>
                 <div className='navbar-link-icons'>
-                    <a href={linkIcons[1].href} target='_blank'>
-                        <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
+                    <a href={linkIcons[1].href} target='_blank' aria-label="Email me!">
+                        <svg alt="Email me!" xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
                             <path d={linkIcons[1].d}/>
                         </svg>
                     </a>
-                    <a href={linkIcons[2].href} target='_blank'>
-                        <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
+                    <a href={linkIcons[2].href} target='_blank' aria-label="View my GitHub">
+                        <svg alt="View my GitHub" xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
                             <path d={linkIcons[2].d} />
                         </svg>
                     </a>
-                    <a href={linkIcons[3].href} target='_blank'>
-                        <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
+                    <a href={linkIcons[3].href} target='_blank' aria-label="View my LinkedIn">
+                        <svg alt="View my LinkedIn" xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
                             <path d={linkIcons[3].d} />
                         </svg>
                     </a>

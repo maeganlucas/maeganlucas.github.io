@@ -34,15 +34,28 @@ function ExperienceBlock () {
         }
     }
 
+    const spacingOfHeader = (id, company) => {
+        if (id == 0 || id == 1)
+        {
+            return (<h2 className='wisteria-text'><strong>{company}</strong></h2>);
+        }
+        if (windowWidth <= rowBreakWidth)
+        {
+            return (<h2 className='wisteria-text'><strong>{company}</strong></h2>);
+        }
+        
+        return (<h2 className='wisteria-text'>&nbsp;<strong>{company}</strong></h2>);
+    }
+
     return (
         <div className='experience-block'>
             {experience.map(({ id, position, company, ip, location, dates}) => {
                 setFeatureData(id);
                 return (
                     <div key={id}>
-                        <div className='subheader-row'>
+                        <div className='subheader-row' id={"subheader-row" + {id}.id}>
                             <h2>{position} @</h2>
-                            {(windowWidth >= rowBreakWidth) ? (<h2 className='wisteria-text'>&nbsp;<strong>{company}</strong></h2>) : (<h2 className='wisteria-text'><strong>{company}</strong></h2>)}
+                            {spacingOfHeader({id}.id, {company}.company)}
                         </div>
                         <div className='subheader-2-row'>
                             <svg xmlns={experienceIcons[0].xmlns} viewBox={experienceIcons[0].viewBox} className={experienceIcons[1].class}>
@@ -55,8 +68,8 @@ function ExperienceBlock () {
                             </svg>
                             <p>{dates}</p>
                         </div>
-                        <div className='ip-text' hidden={!ip}>
-                            <p className='small-p bold-text wisteria-text' id="ip">Important:</p>
+                        <div className='ip-text' hidden={!ip} id={id}>
+                            <p className='small-p bold-text wisteria-text' id={"ip" + {id}.id}>Important:</p>
                             {(windowWidth >= rowBreakWidth) ? (<p className='small-p'>&nbsp;Due to Intellectual Property (IP) agreements, images of features cannot be shared.</p>) : (<p className='small-p'>Due to Intellectual Property (IP) agreements, images of features cannot be shared.</p>)}
                         </div>
                         <div className='job-desc-bullets'>
