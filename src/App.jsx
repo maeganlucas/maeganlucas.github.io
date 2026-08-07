@@ -33,24 +33,24 @@ function App() {
         </main>
         <footer className="App-footer">
           <div>
-            <a href={linkIcons[1].href} target='_blank'>
-            <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
+            <a href={linkIcons[1].href} target='_blank' aria-label="Email me!">
+            <svg alt="Email me!" xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[1].class}>
               <path d={linkIcons[1].d}/>
             </svg>
             </a>
-            <a href={linkIcons[2].href} target='_blank'>
-              <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
+            <a href={linkIcons[2].href} target='_blank' aria-label='View my GitHub'>
+              <svg alt="View my GitHub" xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[2].class}>
                 <path d={linkIcons[2].d} />
               </svg>
             </a>
-            <a href={linkIcons[3].href} target='_blank'>
-              <svg xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
+            <a href={linkIcons[3].href} target='_blank' aria-label='View my LinkedIn'>
+              <svg alt="View my LinkedIn" xmlns={linkIcons[0].xmlns} viewBox={linkIcons[0].viewBox} className={linkIcons[3].class}>
                 <path d={linkIcons[3].d} />
               </svg>
             </a>
           </div>
           <p className='small-p'>&copy; 2026 Maegan A. Lucas. All rights reserved.</p>
-          <p className='small-p issue-text'>This website is coded from scratch! If you see something that's not quite right, let me know <a className='link-text' target='_blank' href='https://github.com/maeganlucas/maeganlucas.github.io/issues/new?template=bug-report.yml'>here</a>.</p>
+          <p className='small-p issue-text'>This website is coded from scratch! If you see something that's not quite right, let me know <a className='link-text' target='_blank' aria-label='Issue Report Form' href='https://github.com/maeganlucas/maeganlucas.github.io/issues/new?template=bug-report.yml'>here</a>.</p>
         </footer>
       </div>
     </Router>

@@ -8,6 +8,14 @@
     @extend .subheader-row;
 }
 
+#subheader-row0 {
+    flex-direction: column;
+}
+
+#subheader-row1 {
+    flex-direction: column;
+}
+
 .job-desc-grid {
     display: grid;
     grid-template-columns: 1rem 2fr;
@@ -84,7 +92,7 @@
         flex-direction: row;
     }
 
-    #ip {
+    #ip0, #ip1 {
         margin-bottom: 0 !important;
     }
 }

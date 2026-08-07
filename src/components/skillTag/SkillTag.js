@@ -14,7 +14,7 @@ function SkillTag ({name}) {
 
     return (
         <div>
-            <img src={src} />
+            <img alt={{name} + "Skill Image"} src={src} />
             <p>{name}</p>
         </div>
     );
