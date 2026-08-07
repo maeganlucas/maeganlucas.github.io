@@ -6,7 +6,7 @@ import { experience, careerFeatures, internFeatures } from '../../data/experienc
 import { experienceIcons, starIcons } from '../../data/icons';
 
 function ExperienceBlock () {
-    const rowBreakWidth = 860;
+    const rowBreakWidth = 991;
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     var featureData;
@@ -35,10 +35,6 @@ function ExperienceBlock () {
     }
 
     const spacingOfHeader = (id, company) => {
-        if (id == 0 || id == 1)
-        {
-            return (<h2 className='wisteria-text'><strong>{company}</strong></h2>);
-        }
         if (windowWidth <= rowBreakWidth)
         {
             return (<h2 className='wisteria-text'><strong>{company}</strong></h2>);
@@ -49,13 +45,16 @@ function ExperienceBlock () {
 
     return (
         <div className='experience-block'>
-            {experience.map(({ id, position, company, ip, location, dates}) => {
+            {experience.map(({ id, position, company, formerly, ip, location, dates}) => {
                 setFeatureData(id);
                 return (
                     <div key={id}>
                         <div className='subheader-row' id={"subheader-row" + {id}.id}>
                             <h2>{position} @</h2>
                             {spacingOfHeader({id}.id, {company}.company)}
+                        </div>
+                        <div className='subheader-row'>
+                            <p hidden={formerly === ""}><i>Formerly {formerly}</i></p>
                         </div>
                         <div className='subheader-2-row'>
                             <svg xmlns={experienceIcons[0].xmlns} viewBox={experienceIcons[0].viewBox} className={experienceIcons[1].class}>

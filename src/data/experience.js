@@ -2,7 +2,8 @@ export const experience = [
     {
         id: 0,
         position: "Software Engineer I",
-        company: "Honeywell Technologies (formerly Honeywell)",
+        company: "Brady Corporation",
+        formerly: "Honeywell Productivity Solutions & Services",
         ip: true,
         location: "Pittsburgh, PA",
         dates: "May 2024 - Present"
@@ -10,7 +11,8 @@ export const experience = [
     {
         id: 1,
         position: "Software Engineering Intern",
-        company: "Honeywell Technologies (formerly Honeywell)",
+        company: "Brady Corporation",
+        formerly: "Honeywell Productivity Solutions & Services",
         ip: true,
         location: "Pittsburgh, PA",
         dates: "May 2023 - August 2023"

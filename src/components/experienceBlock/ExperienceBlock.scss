@@ -8,14 +8,6 @@
     @extend .subheader-row;
 }
 
-#subheader-row0 {
-    flex-direction: column;
-}
-
-#subheader-row1 {
-    flex-direction: column;
-}
-
 .job-desc-grid {
     display: grid;
     grid-template-columns: 1rem 2fr;
@@ -79,6 +71,14 @@
         padding-left: clamp(1rem, 24vw, 25vw);
         padding-right: 0;
         width: 80%;
+    }
+
+    .subheader-row {
+        flex-direction: column;
+    }
+
+    .subheader-2-row {
+        flex-direction: row;
     }
 }
 
